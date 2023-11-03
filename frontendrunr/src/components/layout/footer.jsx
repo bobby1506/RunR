@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarker, faPhone, faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faTwitter, faGooglePlus } from '@fortawesome/free-brands-svg-icons';
+import {BsFacebook,BsInstagram, BsTwitter} from "react-icons/bs"
 import './footer.css';
 import RunRFinal from "../layout/RunRFinal.png"
 
@@ -65,13 +66,16 @@ const Footer = () => {
                 <div className="footer-social-icon">
                   <span>Follow us</span>
                   <a href="#">
-                    <FontAwesomeIcon icon={faFacebookF} className="facebook-bg" />
+                    {/* <FontAwesomeIcon icon={faFacebookF} className="facebook-bg" /> */}
+                    <BsFacebook/>
                   </a>
                   <a href="#">
-                    <FontAwesomeIcon icon={faTwitter} className="twitter-bg" />
+                    {/* <FontAwesomeIcon icon={faTwitter} className="twitter-bg" /> */}
+                    <BsInstagram/>
                   </a>
                   <a href="#">
-                    <FontAwesomeIcon icon={faGooglePlus} className="google-bg" />
+                    {/* <FontAwesomeIcon icon={faGooglePlus} className="google-bg" /> */}
+                    <BsTwitter/>
                   </a>
                 </div>
               </div>

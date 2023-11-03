@@ -107,7 +107,7 @@
   }
   
   .nav__link:hover {
-    color: var(--first-color);
+    color: rgb(255, 184, 184);
   }
   
   .nav__close {

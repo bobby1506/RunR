@@ -34,8 +34,8 @@ const Header = () => {
                 </a>
               </li>
               <li className='nav__item' onClick={closeMenu}>
-                <a href='#popular' className='nav__link'>
-                  Popular
+                <a href='#partner' className='nav__link'>
+                  Partner
                 </a>
               </li>
               <li className='nav__item' onClick={closeMenu}>

@@ -4,7 +4,7 @@ import Partners from "./partner.png"
 const Partner = () => {
   return (
     <div>
-      <section className='offer section'>
+      <section className='offer section' id='partner'>
         <div className="offer__container container grid">
             
             <div className="offer__data">

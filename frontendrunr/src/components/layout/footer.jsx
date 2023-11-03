@@ -1,7 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarker, faPhone, faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons';
-import { faFacebookF, faTwitter, faGooglePlus } from '@fortawesome/free-brands-svg-icons';
 import {BsFacebook,BsInstagram, BsTwitter} from "react-icons/bs"
 import './footer.css';
 import RunRFinal from "../layout/RunRFinal.png"

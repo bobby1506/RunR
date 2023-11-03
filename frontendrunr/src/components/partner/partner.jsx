@@ -16,7 +16,7 @@ const Partner = () => {
                     Be the first one to do that,Be the first one to do that,Be the first one to do that,Be the first one to do that,
                 </p>
 
-                <a href="#" className='button'>
+                <a href="/home" className='button'>
                    Become Partner
                 </a>
             </div>

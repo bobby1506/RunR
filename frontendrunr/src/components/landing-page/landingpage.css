@@ -1,0 +1,222 @@
+.home {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    padding: 4.5rem 0 2rem;
+  }
+
+  .home__data{
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .home__container {
+    position: relative;
+  }
+  
+  
+  .home_title {
+    font-size: var(--h1-font-size);
+    margin-bottom: 1rem;
+  }
+  
+  .home_subtitle {
+    font-size: var(--h3-font-size);
+    margin-bottom: 0.25rem;
+  }
+  
+  .home__elec {
+    font-size: var(--small-font-size);
+    font-weight: 400;
+    color: var(--text-color);
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.25rem;
+  }
+  
+  .home__elec i {
+    color: var(--first-color);
+  }
+  
+  .home__elec i {
+    color: var(--first-color);
+  }
+  
+  .home__img {
+    width: 500px; /* Set the desired width for your image */
+    height: auto;
+    /* margin: 0 auto;  */
+    animation: entry 1s ease forwards, float 2s ease infinite;
+    transform-origin: top;
+  }
+  
+  @keyframes entry {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+
+
+  
+  /* .home__car {
+    align-items: center;
+    justify-content:center;
+    display: flex;
+    column-gap: 4rem;
+    margin-bottom: 2rem;
+  } */
+  .two-parts{
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  }
+  @media screen and (max-width: 900px) {
+    .home__lottie-container {
+      visibility: hidden;
+    }
+  
+    .home__img-container {
+      margin: 0 auto;
+    }
+  }
+  .home__car {
+    align-items: center;
+    justify-content:center;
+    display: flex;
+    column-gap: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .home__car-name {
+    font-size: 0.625rem;
+    font-weight: 400;
+    color: var(--text-color-light);
+  }
+  
+  .home__car-data {
+    text-align: center;
+  }
+  
+  .home__car-number {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: 0.25rem;
+  }
+  
+  .home__car-icon {
+    background-color: var(--container-color);
+    border-radius: 50%;
+    color: aliceblue;
+    padding: 0.376rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  /* .home__button {
+    position: relative;
+    border: 2px solid hsl(158, 89%, 30%);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    font-size: var(--small-font-size);
+    color: var(--white-color);
+    font-weight: var(--font-medium);
+  } */
+
+  .home__button {
+    visibility: hidden;
+    position: relative;
+    border: 2px solid hsl(158, 89%, 30%);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    font-size: var(--small-font-size);
+    color: var(--white-color);
+    font-weight: var(--font-medium);
+  }
+  
+  .home__button::before {
+    content: '';
+    border: 2px solid hsl(158, 98%, 43%);
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 0 12px hsl(158, 98%, 43%);
+    transition: 0.3s;
+    animation: button 3s infinite;
+  }
+  
+  .home .shape__big,
+  .home .shape__small {
+    position: absolute;
+  }
+  
+  .home .shape__big {
+    left: -9rem;
+    top: -4rem;
+  }
+  
+  .home .shape__small {
+    right: -10rem;
+    bottom: 3rem;
+  }
+  
+  @keyframes button {
+    0% {
+      box-shadow: 0 0 12px hsl(158, 98%, 43%);
+    }
+    50% {
+      box-shadow: 0 0 24px hsl(158, 98%, 43%);
+    }
+  }
+  
+
+  .home__lottie-container{
+    width: 50%;
+    visibility: visible;
+    margin-top: -8rem;
+  }
+
+  @media screen and (max-width: 900px){
+    .home__lottie-container{
+        visibility: hidden;
+      }
+
+      .home__button{
+        visibility: visible;
+      }
+      .home__img {
+     
+        margin: 0 auto; 
+      }
+      .two-parts{
+        display: block;
+        }
+  }
+

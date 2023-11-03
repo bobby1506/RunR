@@ -87,10 +87,10 @@ const Footer = () => {
                 <ul>
                   <li><a className="a_footer" href="/home">Home</a></li>
                   {/* <li><a className="a_footer" href="#">about</a></li> */}
-                  <li><a className="a_footer" href="/vendors">Vendor</a></li>
-                  <li><a className="a_footer" href="/portfolio">portfolio</a></li>
-                  <li><a className="a_footer" href="/reels">Reels</a></li>
-                  <li><a className="a_footer" href="/filters">Filters</a></li>
+                  <li><a className="a_footer" href="/vendors">Contact</a></li>
+                  <li><a className="a_footer" href="/portfolio">Partner</a></li>
+                  <li><a className="a_footer" href="/reels">About</a></li>
+                  <li><a className="a_footer" href="/filters">Gallery</a></li>
                   <li><a className="a_footer" href="/">Landing</a></li>
                 </ul>
               </div>
@@ -113,11 +113,11 @@ const Footer = () => {
               <div className="footer-menu">
                 <ul>
                   <li><a className="a_footer" href="/home">Home</a></li>
-                  <li><a className="a_footer" href="/vendors">Vendor</a></li>
-                  <li><a className="a_footer" href="/portfolio">portfolio</a></li>
-                  <li><a className="a_footer" href="/reels">Reels</a></li>
-                  <li><a className="a_footer" href="/filters">Filters</a></li>
-                  <li><a className="a_footer" href="/">Landing</a></li>
+                  <li><a className="a_footer" href="/vendors">About</a></li>
+                  <li><a className="a_footer" href="/portfolio">Partner</a></li>
+                  <li><a className="a_footer" href="/reels">Contact</a></li>
+                  <li><a className="a_footer" href="/filters">About</a></li>
+                  <li><a className="a_footer" href="/">Gallery</a></li>
                 </ul>
               </div>
             </div>

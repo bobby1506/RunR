@@ -25,22 +25,27 @@ const Header = () => {
             <ul className='nav__list'>
               <li className='nav__item' onClick={closeMenu}>
                 <a href='#home' className='nav__link'>
-                  Home
+                  TEST DRIVE
                 </a>
               </li>
               <li className='nav__item' onClick={closeMenu}>
                 <a href='#about' className='nav__link'>
-                  About
+                  BOOK NOW
                 </a>
               </li>
               <li className='nav__item' onClick={closeMenu}>
                 <a href='#partner' className='nav__link'>
-                  Partner
+                  BECOME A DEALER
                 </a>
               </li>
               <li className='nav__item' onClick={closeMenu}>
                 <a href='#featured' className='nav__link'>
-                  Test
+                  ABOUT US
+                </a>
+              </li>
+              <li className='nav__item' onClick={closeMenu}>
+                <a href='#featured' className='nav__link'>
+                  CONTACT US
                 </a>
               </li>
             </ul>

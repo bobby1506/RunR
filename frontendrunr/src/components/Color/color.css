@@ -1,0 +1,14 @@
+.white-box {
+    display: flex; /* Allow flex properties to take effect */
+    width: 500px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .green_evvehicle img{
+    max-width: 100%; 
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+  }

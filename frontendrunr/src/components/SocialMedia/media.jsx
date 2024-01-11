@@ -13,8 +13,10 @@ export default function Media(){
 
     return(
         <main className="Media">
-            <ImageCard imgSrc={bgImage} data-aos="fade-up"
-     data-aos-anchor-placement="bottom-center">
+            <ImageCard imgSrc={bgImage} data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+    {/* //  data-aos-anchor-placement="bottom-center"> */}
                 <h3 className="text">Lorem Ipsum</h3>
                 <p>
                     Hello i am bobby currently persuing the computer science engineering from the faculty of technology and engineering the maharaja sayajirao university of vadodara
@@ -31,8 +33,10 @@ export default function Media(){
                     </button>
                 </div>
             </ImageCard>
-            <ImageCard imgSrc={bgImage} data-aos="fade-up"
-     data-aos-anchor-placement="bottom-center">
+            <ImageCard imgSrc={bgImage} data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+    {/* //  data-aos-anchor-placement="bottom-center"> */}
                 <div className="main_media">
                 <h3 className="text">Lorem Ipsum</h3>
                 <p>
@@ -51,8 +55,10 @@ export default function Media(){
                 </div>
                 </div>
             </ImageCard>
-            <ImageCard imgSrc={bgImage} data-aos="fade-up"
-     data-aos-anchor-placement="bottom-center">
+            <ImageCard imgSrc={bgImage} data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+    {/* //  data-aos-anchor-placement="bottom-center"> */}
                 <h3 className="text">Lorem Ipsum</h3>
                 <p>
                     Hello i am bobby currently persuing the computer science engineering from the faculty of technology and engineering the maharaja sayajirao university of vadodara
@@ -69,8 +75,10 @@ export default function Media(){
                     </button>
                 </div>
             </ImageCard>
-            <ImageCard imgSrc={bgImage} data-aos="fade-up"
-     data-aos-anchor-placement="bottom-center">
+            <ImageCard imgSrc={bgImage} data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+    {/* //  data-aos-anchor-placement="bottom-center"> */}
                 <h3 className="text">Lorem Ipsum</h3>
                 <p>
                     Hello i am bobby currently persuing the computer science engineering from the faculty of technology and engineering the maharaja sayajirao university of vadodara

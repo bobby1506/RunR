@@ -1,14 +1,130 @@
+.main_color_div{
+  /* display:inline; */
+  height:fit-content;
+  background-color: rgb(38, 36, 36);
+  padding: 0 20px;
+  
+}
+.blacks-container{
+  display: flex;
+ 
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logos{
+  display: flex;
+  position: relative;
+}
+
+.left_image {
+  width: 30%;
+  margin-right: 35rem;
+}
+
+.right_image {
+  width: 30%;
+  
+}
+
+
+
 .white-box {
-    display: flex; /* Allow flex properties to take effect */
-    width: 500px;
-    height: 500px;
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Set direction to column for vertical stacking */
+  align-items: center; /* Center items horizontally */
+  justify-content: flex-start; /* Align items to the start (top) */
+  width: 700px;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+}
+
+.green_evvehicle {
+  position: relative;
+   top: 50px;
+}
+
+
+
+.green_evvehicle img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Additional styling for the circles */
+.circle_main {
+  position: absolute;
+  top: 0;
+  left: 80;
+  padding: 2rem;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+ 
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.green{
+  background-color: #00ff00;
+}
+
+.grey{
+  background-color: grey;
+}
+
+.black{
+  background-color: black;
+}
+
+.orange{
+  background-color: orange;
+}
+
+.white{
+  background-color: white;
+  border: black solid 2px;
+}
+
+@media screen and (max-width: 768px) {
+  .white-box {
+    width: 100%;
+    height: auto;
     background-color: rgb(255, 255, 255);
   }
 
-  .green_evvehicle img{
-    max-width: 100%; 
-    height: 70%;
-    align-items: center;
-    justify-content: center;
-    margin-top: 4rem;
+  .green_evvehicle img {
+    width: 100%;
+    height: auto;
   }
+}
+
+.main_content_color h2{
+  font-weight: 600;
+}
+
+.lower_heading{
+  padding: 2rem;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+ 
+ 
+}
+.lower_heading span{
+  color: orange;
+}
+.lower_heading h3{
+  font-weight: 700;
+  /* padding-left: 2rem !important; */
+}

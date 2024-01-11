@@ -12,6 +12,9 @@
 .blue-box{
   display: flex; /* Allow flex properties to take effect */
   width: 700px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 500px;
   background-color: rgb(43, 160, 255);
   margin-left: 4rem;
@@ -21,6 +24,7 @@
     display: flex; /* Allow flex properties to take effect */
     width: 550px;
     height: 500px;
+    justify-content: flex-start;
     background-color: rgb(0, 0, 0);
     margin-left: 4rem;
   }
@@ -46,9 +50,159 @@
   }
 
   .orange_ev img {
-    max-width: 150%; 
+   
+    max-width: 140%; 
     max-height: 150%;
-    margin-inline-start: 2rem;  
+    margin-top: 6rem;
+    /* margin-inline-start: 2rem;   */
   }
 
+ 
+  @media screen and (max-width: 768px) {
+    /* Adjust styles for screens wider than 768px */
+    .black-container {
+      flex-direction: column;
+    }
   
+
+    .orange_ev{
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .black-box {
+     
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      margin-top: 10rem;
+      background-color: rgb(0, 0, 0);
+      /* margin-right: 4rem; */
+    }
+  
+    .blue-box {
+      width: 100%; /* Adjust width for large screens */
+      height: 100%; /* Adjust height to fill the container */
+     margin-top: 4rem;
+      margin-right: 0rem;
+      margin-left: 0rem;
+    }
+    .orange-box {
+    width: 100%;
+    height:200%;
+    margin-right: 0rem;
+    margin-top: 1rem;
+    }
+    .orange_ev img {
+      position: relative;
+    margin-left: 0rem;
+    overflow-x: hidden;
+    /* width: 200%; */
+    max-width: 100%;
+    /* max-width: 100%; Ensure the image doesn't exceed the container's width */
+    height: 0 auto; /* Ensure the image doesn't exceed the container's height */
+    /* margin-left: -20rem; */
+    z-index: 100;
+    opacity: 1;
+    
+    }
+  
+  
+  
+    i::before {
+      font-size: 220px;
+    }
+
+    .blackk-box{
+    margin-top: 4rem;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(0, 0, 0);
+      margin-right: 0rem;
+    }
+
+    .wrapperss{
+      justify-content: center;
+      margin: 0 auto; 
+  }
+  }
+
+  .main_content_orange
+{
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  .solid_safety h2{
+    /* position: absolute; */
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: transparent;
+    font-size:70px !important;
+    padding: 1rem;
+    -webkit-text-stroke: 2px #0ef;
+  }
+
+  .liquid h4 {
+    margin: 0;
+    font-size: 50px;
+    display: inline;
+    text-align: center;
+  }
+
+  .liquid span{
+    font-size: 30px;
+    
+  }
+
+  .points_orange{
+    margin-top: 2rem;
+  }
+
+  .points_orange h4{
+    padding: 1rem;
+  }
+
+ 
+/* Add the following style to position "0 KELVINTM" below the orange_ev image */
+.orange_ev {
+  position: relative;
+}
+
+.orange_ev span {
+  position: absolute;
+  margin-top:9rem ;
+  z-index:-1;
+  
+  font-size: 125px;
+  font-weight: 700; /* Adjust the font size as needed */
+  -webkit-text-stroke: 3px rgb(255, 255, 255);
+  color: transparent;
+}
+
+
+
+.KMS h2{
+  /* position: absolute; */
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size:75px !important;
+  padding: 1rem;
+  top: 0;
+
+}
+
+.warranty span {
+  margin: 0;
+  font-size: 60px;
+  font-weight: 800;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  color: transparent;
+}
+

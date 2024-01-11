@@ -115,3 +115,13 @@
     
   }
 
+@media screen and (max-width:768px) {
+  .Media {
+    flex-direction: column;
+    
+  }
+
+  .ImageCard {
+   margin-top: 1.5rem;
+  }
+}

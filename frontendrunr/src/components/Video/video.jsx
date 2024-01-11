@@ -1,43 +1,31 @@
 // VideoPage.js
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import './VideoPage.css'; // Import your CSS file
 import Explore from "../../assets/video2.mp4"
+
 const VideoPage = () => {
   const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
 
-  useEffect(() => {
-    const options = {
-      root: null, // use the viewport as the root
-      rootMargin: '0px',
-      threshold: 0.5, // trigger when 50% of the video is visible
-    };
-
-    const handleIntersection = (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          // Video is in the viewport, play it
-          videoRef.current.play();
-        } else {
-          // Video is not in the viewport, pause it
-          videoRef.current.pause();
-        }
-      });
-    };
-
-    const observer = new IntersectionObserver(handleIntersection, options);
-    observer.observe(videoRef.current);
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
+  const togglePlayPause = () => {
+    const video = videoRef.current;
+    if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+    }
+    setIsPlaying(!isPlaying);
+  };
 
   return (
     <div className="video-container">
-      <video ref={videoRef}>
+      <video ref={videoRef} onClick={togglePlayPause}>
         <source src={Explore} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+      <div className={`play-pause-button ${isPlaying ? 'playing' : 'paused'}`} onClick={togglePlayPause}>
+        {isPlaying ? 'Pause' : 'Play'}
+      </div>
     </div>
   );
 };

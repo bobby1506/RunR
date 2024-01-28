@@ -3,10 +3,11 @@
 .Media {
     display: flex;
     flex-direction: row;
+    flex-wrap:wrap;
     justify-content: space-around;
     margin: 0 auto;
     align-items: center;
-    padding: 80px;
+    padding: 50px;
     padding-bottom: 2rem;
     background-color: rgb(38, 36, 36);
 
@@ -14,6 +15,7 @@
 
   .main_cont{
     display: flex;
+    
   }
   
   .ImageCard {
@@ -118,9 +120,12 @@
 @media screen and (max-width:768px) {
   .Media {
     flex-direction: column;
-    
+    padding: 5px;
   }
-
+  .ImageCard {
+    width: 100%; /* Set cards to be 50% of the width with some margin */
+    margin: 1rem;
+  }
   .ImageCard {
    margin-top: 1.5rem;
   }

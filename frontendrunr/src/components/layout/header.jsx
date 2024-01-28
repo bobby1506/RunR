@@ -18,23 +18,23 @@ const Header = () => {
     <div>
       <header className={`header ${menuVisible ? 'show-menu' : ''}`} id='header'>
         <nav className='nav container'>
-          <a href='#' className='nav__logo'>
+          <a href='/' className='nav__logo'>
             <img src={RunRFinal} alt='' />
           </a>
           <div className={`nav__menu ${menuVisible ? 'show-menu' : ''}`} id='nav-menu'>
             <ul className='nav__list'>
               <li className='nav__item' onClick={closeMenu}>
-                <a href='#home' className='nav__link'>
+                <a href='/testdrive' className='nav__link'>
                   TEST DRIVE
                 </a>
               </li>
               <li className='nav__item' onClick={closeMenu}>
-                <a href='#about' className='nav__link'>
+                <a href='/testdrive' className='nav__link'>
                   BOOK NOW
                 </a>
               </li>
               <li className='nav__item' onClick={closeMenu}>
-                <a href='#partner' className='nav__link'>
+                <a href='/dealer' className='nav__link'>
                   BECOME A DEALER
                 </a>
               </li>

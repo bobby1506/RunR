@@ -62,7 +62,10 @@ body {
   font-size: var(--normal-font-size) !important;
   background-color: var(--body-color) !important;
   color: var(--text-color) !important;
-  
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  /* min-height: 100vh; */
 }
 
 
@@ -209,3 +212,25 @@ img {
     padding-bottom: 1rem;
   }
 }
+
+.backtotop {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  padding: 20px;
+  background: transparent;
+  color: white;
+  font-size: 45px;
+  animation: moveUpDown 1.5s ease-in-out infinite;
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+

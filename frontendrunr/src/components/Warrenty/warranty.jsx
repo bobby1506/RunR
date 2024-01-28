@@ -3,6 +3,7 @@ import React, {useEffect} from 'react';
 import "../Safety/safety.css"
 import White from "../../assets/white.png"
 import AOS from "aos"
+import Award from "../../assets/awards.png"
 const Warranty = () => {
 
   useEffect(()=>{
@@ -17,8 +18,12 @@ const Warranty = () => {
           <img src={White} alt="" data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine"/>
-
-         
+        </div>
+        <div className="award">
+        <img src={Award} alt="" />
+        </div>
+        <div className="stopnot">
+        <span>#STOPNOT</span>
         </div>
       </div>
       <div className="blackk-box right-box" data-aos="zoom-in-left">

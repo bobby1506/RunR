@@ -1,100 +1,47 @@
+import { useState, useEffect } from "react";
 import ImageCard from "./ImageCard";
-import { useEffect } from "react";
-import bgImage from "../../assets/b.jpg"
-import { FaRegHeart } from "react-icons/fa";
-import './media.css'
-import AOS from 'aos'
-export default function Media(){
+import './media.css';
+import axios from 'axios';
+import AOS from 'aos';
 
-    useEffect(()=>{
+export default function Media() {
+    const [mediaData, setMediaData] = useState([]);
+
+    useEffect(() => {
+        // Fetch data from the server when the component mounts
+        const fetchData = async () => {
+            try {
+                const response = await axios.get('api/v1/media/getAll');
+                console.log(response.data);
+                // Assuming the actual data is in response.data.data
+                setMediaData(response.data);
+            } catch (error) {
+                console.error('Error fetching media data:', error);
+            }
+        };
+
+        fetchData();
+
         AOS.init();
         window.addEventListener('load', AOS.refresh);
-      },[])
 
-    return(
+    }, []);
+
+    return (
         <main className="Media">
-            <ImageCard imgSrc={bgImage} data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
-    {/* //  data-aos-anchor-placement="bottom-center"> */}
-                <h3 className="text">Lorem Ipsum</h3>
-                <p>
-                    Hello i am bobby currently persuing the computer science engineering from the faculty of technology and engineering the maharaja sayajirao university of vadodara
-                </p>
-                <div className="space-x-4 mt-4">
-                    <button className="btn">
-                        <FaRegHeart/>
-                    </button>
-                    <button className="btn">
-                        <FaRegHeart/>
-                    </button>
-                    <button className="btn">
-                        <FaRegHeart/>
-                    </button>
-                </div>
-            </ImageCard>
-            <ImageCard imgSrc={bgImage} data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
-    {/* //  data-aos-anchor-placement="bottom-center"> */}
-                <div className="main_media">
-                <h3 className="text">Lorem Ipsum</h3>
-                <p>
-                    Hello i am bobby currently persuing the computer science engineering from the faculty of technology and engineering the maharaja sayajirao university of vadodara
-                </p>
-                <div className="space-x-4 mt-4">
-                    <button className="btn">
-                        <FaRegHeart/>
-                    </button>
-                    <button className="btn">
-                        <FaRegHeart/>
-                    </button>
-                    <button className="btn">
-                        <FaRegHeart/>
-                    </button>
-                </div>
-                </div>
-            </ImageCard>
-            <ImageCard imgSrc={bgImage} data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
-    {/* //  data-aos-anchor-placement="bottom-center"> */}
-                <h3 className="text">Lorem Ipsum</h3>
-                <p>
-                    Hello i am bobby currently persuing the computer science engineering from the faculty of technology and engineering the maharaja sayajirao university of vadodara
-                </p>
-                <div className="space-x-4 mt-4">
-                    <button className="btn">
-                        <FaRegHeart/>
-                    </button>
-                    <button className="btn">
-                        <FaRegHeart/>
-                    </button>
-                    <button className="btn">
-                        <FaRegHeart/>
-                    </button>
-                </div>
-            </ImageCard>
-            <ImageCard imgSrc={bgImage} data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
-    {/* //  data-aos-anchor-placement="bottom-center"> */}
-                <h3 className="text">Lorem Ipsum</h3>
-                <p>
-                    Hello i am bobby currently persuing the computer science engineering from the faculty of technology and engineering the maharaja sayajirao university of vadodara
-                </p>
-                <div className="space-x-4 mt-4">
-                    <button className="btn">
-                        <FaRegHeart/>
-                    </button>
-                    <button className="btn">
-                        <FaRegHeart/>
-                    </button>
-                    <button className="btn">
-                        <FaRegHeart/>
-                    </button>
-                </div>
-            </ImageCard>
+            {mediaData.map((mediaItem, index) => (
+                <ImageCard
+                    key={index}
+                    link={mediaItem.link}
+                    imgSrc={mediaItem.image}
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000"
+                >
+                    <h3 className="text">{mediaItem.heading}</h3>
+                    <p>{mediaItem.data}</p>
+                </ImageCard>
+            ))}
         </main>
-    )
+    );
 }

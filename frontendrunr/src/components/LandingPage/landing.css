@@ -1,8 +1,69 @@
 .main_page{
-    height: 80vh;
-    background-color: aliceblue !important;
+    position: relative;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* margin-top: 4rem; */
+    /* background-color: aliceblue !important; */
+    background: linear-gradient(167deg, #fb8247 0%, #fff 20%, #fff 80%, #5f5 100%);
+
 }
+
+.chakra{
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    color: blue;
+    border: 8px solid currentColor;
+    border-radius: 50%;
+    transform: rotateY(180deg);
+    animation: outer .5s cubic-bezier(0.25,1 ,0.7, 1.35),
+               rotate 30s linear infinite 3s;
+}
+
+.chakra .spikes,
+.chakra .spikes .spike{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.chakra .spikes .spike{
+    transform: rotate(calc(15deg * var(--i)));
+}
+
+.chakra .spikes .spike::before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: currentColor;
+    border-radius: 50%;
+    top: -8px;
+    left: calc(50% - 8px);
+    animation: circle 2s linear calc(-0.05s * var(--i));
+}
+
+.chakra .spikes .spike::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 50%;
+    background: currentColor;
+    top: -8px;
+    left: calc(50% - 5px);
+    transform-origin: bottom;
+    transform: rotate(7.5deg);
+    clip-path: polygon(50% 5%, 100% 50%, 50% 95%, 0% 50%);
+    animation: spike 3s linear calc(-0.05s * var(--i));
+}
+
 .img_head{
+    z-index: 3;
     width: 100%;
     margin-top: 8rem;
 }
@@ -11,5 +72,70 @@
     .main_page{
    height: auto;
     }
+    
+.chakra{
+    width: 130px;
+    height: 130px;
+    margin-top: 3.5rem;
+    border: 8px solid currentColor;  
+}
+
+.chakra .spikes .spike::before{
+    width: 10px;
+    height: 10px;  
+}
+
+.chakra .spikes .spike::after{
+    width: 7px;
+    height: 50%;   
+}
    
 }
+
+.chakra::after{
+    width: 24px;
+    height:24px ; 
+}
+
+@keyframes outer {
+    0%{
+        transform: rotateY(180deg) scale(0);
+    }
+    
+}
+
+@keyframes inner {
+    0%, 75%{
+        transform: scale(0);
+    }
+    
+}
+@keyframes circle {
+    0%, 90%{
+        opacity: 0;
+    }
+}
+
+@keyframes spike {
+  0%, 90%{
+    opacity: 0;
+    clip-path: polygon(50% 90%, 100% 90%, 90% 95%, 0 50%);
+  }    
+}
+
+@keyframes rotate{
+    to{
+      transform: rotateY(180deg) rotate(-360deg)
+    }
+  }
+
+
+  @media screen and (max-width:558px) {
+    .main_page{
+        height: auto;
+    }
+
+    .img_head img{
+        width: 100%;
+    }
+  }

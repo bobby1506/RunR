@@ -2,7 +2,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './VideoPage.css'; // Import your CSS file
 import Explore from "../../assets/video2.mp4"
-
+import { FaRegPlayCircle } from "react-icons/fa";
 const VideoPage = () => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -24,7 +24,7 @@ const VideoPage = () => {
         Your browser does not support the video tag.
       </video>
       <div className={`play-pause-button ${isPlaying ? 'playing' : 'paused'}`} onClick={togglePlayPause}>
-        {isPlaying ? 'Pause' : 'Play'}
+        {isPlaying ? <FaRegPlayCircle /> : <FaRegPlayCircle />}
       </div>
     </div>
   );

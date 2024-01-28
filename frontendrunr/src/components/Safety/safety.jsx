@@ -30,11 +30,11 @@ const Safety = () => {
         </div>
         </div>
         
-      <div className="wrapperss">
-          <i class="zmdi zmdi-chevron-up"></i>
-          <i class="zmdi zmdi-chevron-up"></i>
-          <i class="zmdi zmdi-chevron-up"></i>
-          </div>
+      {/* <div className="wrapperss">
+          <i class="zmdi zmdi-chevron-up zmdis"></i>
+          <i class="zmdi zmdi-chevron-up zmdis"></i>
+          <i class="zmdi zmdi-chevron-up zmdis"></i>
+          </div> */}
       </div>
       <div className="orange-box right-box">
         <div className="main_content">

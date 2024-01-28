@@ -1,6 +1,6 @@
 import React from 'react'
 import Landing from '../components/LandingPage/landing'
-import About from '../components/About/about'
+import About from '../components/about/about'
 import Safety from '../components/Safety/safety'
 import Warranty from '../components/Warrenty/warranty'
 import VideoPage from '../components/Video/video'

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { AiOutlineMenuFold, AiOutlineCloseCircle } from 'react-icons/ai';
 import RunRFinal from './RunRFinal.png';
 import './header.css';
@@ -18,35 +19,35 @@ const Header = () => {
     <div>
       <header className={`header ${menuVisible ? 'show-menu' : ''}`} id='header'>
         <nav className='nav container'>
-          <a href='/' className='nav__logo'>
+          <Link to='/' className='nav__logo'>
             <img src={RunRFinal} alt='' />
-          </a>
+          </Link>
           <div className={`nav__menu ${menuVisible ? 'show-menu' : ''}`} id='nav-menu'>
             <ul className='nav__list'>
               <li className='nav__item' onClick={closeMenu}>
-                <a href='/testdrive' className='nav__link'>
+                <Link to='/testdrive' className='nav__link'>
                   TEST DRIVE
-                </a>
+                </Link>
               </li>
               <li className='nav__item' onClick={closeMenu}>
-                <a href='/testdrive' className='nav__link'>
+                <Link to='/testdrive' className='nav__link'>
                   BOOK NOW
-                </a>
+                </Link>
               </li>
               <li className='nav__item' onClick={closeMenu}>
-                <a href='/dealer' className='nav__link'>
+                <Link to='/dealer' className='nav__link'>
                   BECOME A DEALER
-                </a>
+                </Link>
               </li>
               <li className='nav__item' onClick={closeMenu}>
-                <a href='#featured' className='nav__link'>
+                <Link to='#featured' className='nav__link'>
                   ABOUT US
-                </a>
+                </Link>
               </li>
               <li className='nav__item' onClick={closeMenu}>
-                <a href='#featured' className='nav__link'>
+                <Link to='#featured' className='nav__link'>
                   CONTACT US
-                </a>
+                </Link>
               </li>
             </ul>
 

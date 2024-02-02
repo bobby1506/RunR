@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import './about.css'; // Import your CSS file
 import GreenEv from "../../assets/green.png";
+import Hundred from "../../assets/hunderd.png";
 import AOS from 'aos'
 const About = () => {
 
@@ -18,15 +19,25 @@ const About = () => {
           <img src={GreenEv} alt="ss" data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine" />
-         
+     {/* <img src={Hundred} alt="" /> */}
+  
+        </div>
+      
+        <div className="hundred">
+        <img src={Hundred} alt="" />
+        </div>
+        <div className="indigineous">
+        <h3>INDIGINEOUS</h3>
         </div>
       </div>
+   
       <div className="content-box right-box" data-aos="zoom-in-left" >
         <div className="main_content">
         <div className="head_content" data-aos="flip-left"
      data-aos-easing="ease-out-cubic"
      data-aos-duration="2000"
     >
+       
             <h1>MADE IN INDIA</h1>
             <h2>MADE FOR INDIA</h2>
         </div>

@@ -65,6 +65,7 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
+  overflow-x: hidden !important;
   /* min-height: 100vh; */
 }
 
@@ -234,3 +235,6 @@ img {
 }
 
 
+.blocks{
+  overflow-x: hidden;
+}

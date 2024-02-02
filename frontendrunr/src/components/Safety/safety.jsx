@@ -19,7 +19,7 @@ const Safety = () => {
           <h2>SOLID SAFETY</h2>
         </div>
         <div className="liquid">
-          <span><sup>WITH</sup></span><h4> LIQUID COOLANT</h4>
+          <span><sup>WITH</sup></span><h4> LIQUID COOLANT!</h4>
         </div>
 
         <div className="points_orange">
@@ -39,7 +39,7 @@ const Safety = () => {
       <div className="orange-box right-box">
         <div className="main_content">
         <div className="orange_ev" data-aos="zoom-in-left">
-        <span>0 KELVIN<sup>TM</sup></span>
+        <span>0 Kelvin<sup>TM</sup></span>
           <img src={Orange} alt="s" data-aos="fade-left"
      data-aos-anchor="#example-anchor"
      data-aos-offset="1500"

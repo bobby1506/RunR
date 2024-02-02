@@ -1,6 +1,6 @@
 import React from 'react';
 import './landing.css';
-import Head from '../../assets/bggg.png';
+import Head from '../../assets/final.png';
 
 const Landing = () => {
   const spikeStyle = {

@@ -9,16 +9,15 @@ import Media from '../components/SocialMedia/media'
 const home = () => {
   return (
     <div>
-     <Landing/>
-     <div className="black_container" style={{background:'rgb(38, 36, 36)'}}>
+        <div className="blocks" style={{background:'rgb(38, 36, 36)'}}>
+     <Landing/>   
      <About/>
      <Safety/>
      <Warranty/>
-     </div>
-     
      <Color/>
      <VideoPage/>
      <Media/>
+    </div>
     </div>
   )
 }

@@ -18,11 +18,11 @@ function Blog() {
 
   return (
     <>
-      <section id="Taleido">
+     
       
 
 
-        <div className="container">
+        <div className="container_taliedo">
           <Heading
             className="taleido_heading"
             id="glheading"
@@ -116,7 +116,7 @@ function Blog() {
             );
           })}
         </div>
-      </section>
+    
     </>
   );
 }

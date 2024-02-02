@@ -3,6 +3,7 @@ import ImageCard from "./ImageCard";
 import './media.css';
 import axios from 'axios';
 import AOS from 'aos';
+import Heading from "../../Common/Headings/Heading";
 
 export default function Media() {
     const [mediaData, setMediaData] = useState([]);
@@ -28,7 +29,14 @@ export default function Media() {
     }, []);
 
     return (
+        <div className="main_media">
+                    <Heading
+        className="taleido_heading"
+        id="glheading"
+        title="WE ARE IN THE NEWS!"
+      />
         <main className="Media">
+     
             {mediaData.map((mediaItem, index) => (
                 <ImageCard
                     key={index}
@@ -43,5 +51,6 @@ export default function Media() {
                 </ImageCard>
             ))}
         </main>
+        </div>
     );
 }

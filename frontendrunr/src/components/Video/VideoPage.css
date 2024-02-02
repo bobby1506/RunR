@@ -1,7 +1,11 @@
 /* VideoPage.css */
 .video-container {
-    /* width: 100vw; */
-    height: 100vh;
+    width: 65%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    /* height: 100vh; */
     overflow: hidden;
     background-color: black;
     position: relative;
@@ -9,12 +13,14 @@
   
   video {
     width: 100%;
-    /* height: 100%; */
+   
+    height: auto;
     object-fit: cover; /* Maintain aspect ratio and cover the entire container */
   }
 
   @media screen and (max-width:768px) {
     .video-container{
+      width: 100%;
       height: auto;
     }
   }

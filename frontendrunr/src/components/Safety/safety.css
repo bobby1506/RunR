@@ -6,7 +6,7 @@
   justify-content: center; /* Center items vertically */
   width: 550px;
   height: 500px;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   background-color: rgb(0, 0, 0);
   margin-right: 4rem;
 }
@@ -18,18 +18,18 @@ z-index: 5;
 .blue-box{
   position: relative;
   display: flex; /* Allow flex properties to take effect */
-  width: 700px;
+  width: 600px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 500px;
-  background-color: rgb(43, 160, 255);
+  background-color: #004AAD;
   margin-left: 4rem;
 }
   
   .black-box {
     display: flex; /* Allow flex properties to take effect */
-    width: 550px;
+    width: 600px;
     height: 500px;
     justify-content: flex-start;
     background-color: rgb(0, 0, 0);
@@ -41,9 +41,9 @@ z-index: 5;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 700px;
+    width: 600px;
     height: 500px;
-    background-color: rgb(255, 102, 13);
+    background-color: #F6744C;
     margin-right: 4rem;
   }
   
@@ -57,8 +57,8 @@ z-index: 5;
   }
 
   .orange_ev img {
-   
-    max-width: 140%; 
+    width: 145%;
+    max-width: 150%; 
     max-height: 150%;
     margin-top: 6rem;
     /* margin-inline-start: 2rem;   */
@@ -119,6 +119,7 @@ z-index: 5;
     overflow-x: hidden;
     /* width: 200%; */
     max-width: 100%;
+    width: 140%;
     /* max-width: 100%; Ensure the image doesn't exceed the container's width */
     height: 0 auto; /* Ensure the image doesn't exceed the container's height */
     /* margin-left: -20rem; */
@@ -160,15 +161,19 @@ z-index: 5;
   .solid_safety h2{
     /* position: absolute; */
     display: block;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* font-weight: 600; */
     margin: 0 auto;
     text-align: center;
     color: transparent;
-    font-size:70px;
+    font-size:78px;
+    font-weight: 500;
     padding: 1rem;
-    -webkit-text-stroke: 2px #0ef;
+    -webkit-text-stroke: 2.5px #0ef;
   }
 
   .liquid h4 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     font-size: 50px;
     display: inline;
@@ -176,7 +181,7 @@ z-index: 5;
   }
 
   .liquid span{
-    font-size: 30px;
+    font-size: 37px;
     
   }
 
@@ -185,37 +190,46 @@ z-index: 5;
   }
 
   .points_orange h4{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 1rem;
   }
-
  
-/* Add the following style to position "0 KELVINTM" below the orange_ev image */
+  
+  .points_orange h4::before {
+
+    content: '\2022'; /* Unicode character for a bullet point */
+    margin-right: 10px; /* Adjust the spacing between the bullet point and the text */
+  }
+  
+
+
 .orange_ev {
   position: relative;
 }
 
 .orange_ev span {
   position: absolute;
-  margin-top:9rem ;
+  padding-top:7rem ;
   z-index:-1;
-  
-  font-size: 125px;
-  font-weight: 700; /* Adjust the font size as needed */
-  -webkit-text-stroke: 3px rgb(255, 255, 255);
+  font-family: 'Anton', sans-serif;
+  font-size: 130px;
+  padding-left: 2rem;
+  font-weight: 500; /* Adjust the font size as needed */
+  -webkit-text-stroke: 4px rgba(255, 255, 255, 0.689);
   color: transparent;
 }
 
 
 
 .KMS h2{
-  /* position: absolute; */
   display: block;
   margin: 0 auto;
   text-align: center;
   font-size:75px !important;
   padding: 1rem;
   top: 0;
-
 }
 
 .warranty span {
@@ -230,13 +244,15 @@ z-index: 5;
 }
 
 .award img{
-  width: 30%;
+  width: 43%;
+  opacity: 0.3;
+  filter: invert(1);
   z-index: -1;
   margin-top: -8rem;
 }
 .award img{
   z-index: -1;
-  margin-left: 28rem;
+  margin-left: 20rem;
   padding-top: 0rem;
 }
 @media screen and (max-width: 580px){
@@ -277,15 +293,16 @@ z-index: 5;
 
 .stopnot span{
   color: black;
-  font-size: 70px;
-  padding-right: 18rem;
-  font-weight: 800;
-  -webkit-text-stroke: 2.5px rgb(255, 255, 255);
+  font-size: 80px;
+  font-family: 'Anton', sans-serif;
+  padding-right: 17rem;
+  font-weight: 400;
+  -webkit-text-stroke: 2.5px rgba(255, 255, 255, 0.571);
   color: transparent;
   font-style: italic;
 }
 .stopnot{
   position: absolute;
-  padding-top: 26rem;
+  padding-top: 24rem;
 }
 

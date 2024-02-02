@@ -1,30 +1,27 @@
 // VideoPage.js
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import './VideoPage.css'; // Import your CSS file
-import Explore from "../../assets/video2.mp4"
+// import Explore from "../../assets/rurn.mp4";
 import { FaRegPlayCircle } from "react-icons/fa";
+import Heading from '../../Common/Headings/Heading';
+
 const VideoPage = () => {
   const videoRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(false);
 
-  const togglePlayPause = () => {
-    const video = videoRef.current;
-    if (video.paused) {
-      video.play();
-    } else {
-      video.pause();
-    }
-    setIsPlaying(!isPlaying);
-  };
 
   return (
-    <div className="video-container">
-      <video ref={videoRef} onClick={togglePlayPause}>
-        <source src={Explore} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <div className={`play-pause-button ${isPlaying ? 'playing' : 'paused'}`} onClick={togglePlayPause}>
-        {isPlaying ? <FaRegPlayCircle /> : <FaRegPlayCircle />}
+    <div className="main_video">
+      <Heading
+        className="taleido_heading"
+        id="glheading"
+        title="WALKTHROUGH VIDEO"
+      />
+      <div className="video-container">
+        <video ref={videoRef} controls>
+          <source src="https://res.cloudinary.com/dlf8u5l7a/video/upload/v1706895464/runr/cgp3mdynqqxdgi7vqdlo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+       
       </div>
     </div>
   );

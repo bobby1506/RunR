@@ -3,11 +3,13 @@ import React, { useState, useEffect } from 'react';
 import Select from 'react-select';
 import axios from 'axios';
 import "./dealership.css";
+import SwappingSquaresSpinner from './loader';
 
 const DealershipForm = () => {
   const [selectedCountry, setSelectedCountry] = useState('');
   const [selectedState, setSelectedState] = useState('');
   const [selectedCity, setSelectedCity] = useState('');
+  const [loading, setLoading] = useState(false); // Added loading state
 
   const [countries, setCountries] = useState([]);
   const [states, setStates] = useState([]);
@@ -135,18 +137,53 @@ const DealershipForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
     
     try {
       const response = await axios.post(config.apiEndpoint, formData);
       console.log(response.data);
       alert('Form submitted successfully!');
+      setFormData({
+        applicantDetails: {
+        fullName: '',
+        educationQualification: '',
+        email: '',
+        mobileNumber: '',
+      },
+      existingBusinessDetails: {
+        existingBusiness: '',
+        businessName: '',
+        turnover: '',
+      },
+      locationAppliedFor: {
+        country: '',
+        state: '',
+        city: '',
+        pincode: '',
+      },
+      proposedPremisesDetails: {
+        stateOfProposedLocation: '',
+        areaOfProposedLocation: '',
+        proposedPremisesAddress: '',
+        frontageOfProposedLocation: '',
+        proposedAmountToInvest: '',
+        details: '',
+      }},)
+
     } catch (error) {
       console.error('Error submitting form data:', error);
       alert('Error submitting form data. Please try again.');
     }
+    finally {
+      setLoading(false); // Set loading to false after the request is complete
+    }
   };
 
   return (
+    <>
+    {loading ? (
+      <SwappingSquaresSpinner />
+    ) : (
     <div>
        <div className="container_dealer">
                  <header>Registration</header>
@@ -379,8 +416,7 @@ const DealershipForm = () => {
 
                 {/* Submit button */}
                 <button type="submit" className='nextBtn'>
-                  <span className='btnText'>Submit</span>
-                  <i className="uil uil-navigator"></i>
+                  <span className='btnText' id='submit' disabled={loading}>Submit</span>
                 </button>
               </div>
             </div>
@@ -388,7 +424,9 @@ const DealershipForm = () => {
       </div>
 
     </div>
-  );
+      )
+    }
+    </>)
 };
 
 export default DealershipForm;

@@ -12,7 +12,7 @@ const About = () => {
   },[])
     
   return (
-    <div className="black-container">
+    <div className="black-container" id='about'>
       <div className="green-box left-box" data-aos="zoom-in-right">
         <div className="green_ev" >
     

@@ -169,14 +169,11 @@ border-radius: 20px 0 0 20px;
   margin: 0 auto;
 }
 
-
-
 .green_evvehicle img {
-  max-width: 100%;
+  max-width: 150%;
   height: auto;
 }
 
-/* Additional styling for the circles */
 .circle_main {
   position: absolute;
   top: 0;
@@ -193,10 +190,18 @@ border-radius: 20px 0 0 20px;
 .circle {
   width: 40px;
   height: 40px;
- 
   border-radius: 50%;
   margin-bottom: 10px;
+  background-color: #3498db; /* Change the background color as needed */
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  box-shadow: inset 5px 2px 10px rgba(0, 0, 0, 0.733);
 }
+
+.circle:hover {
+  box-shadow: inset 0 10px 20px rgba(255, 152, 188, 0.5); /* Adjust the box shadow as needed */
+}
+
 
 .green{
   background-color: #00ff00;
@@ -300,14 +305,21 @@ border-radius: 20px 0 0 20px;
 
 @media screen and (max-width:840px){
   .buttons {
+    padding: 0.3em;
     border:2px solid #ffffff;
     border-radius: 20px;
     display: block !important;
     width: 100%;
   }
+  .book_now{
+    width: 70%;
+  }
   .content h4 {
     font-size: 17px !important;
     text-align: center !important;
+  }
+.details h4{
+     /* text-align: left !important; */
   }
   .tables{
     display: block;
@@ -447,4 +459,10 @@ border-radius: 20px 0 0 20px;
 .right_image{
  flex: 2;
 }
+}
+
+@media screen and (max-width:580px) {
+    .white-box img{
+      width: 140%;
+    }
 }

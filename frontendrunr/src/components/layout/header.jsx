@@ -40,14 +40,14 @@ const Header = () => {
                 </Link>
               </li>
               <li className='nav__item' onClick={closeMenu}>
-                <Link to='#featured' className='nav__link'>
+                <a href='#about' className='nav__link'>
                   ABOUT US
-                </Link>
+                </a>
               </li>
               <li className='nav__item' onClick={closeMenu}>
-                <Link to='#featured' className='nav__link'>
+                <a href='#footer' className='nav__link'>
                   CONTACT US
-                </Link>
+                </a>
               </li>
             </ul>
 

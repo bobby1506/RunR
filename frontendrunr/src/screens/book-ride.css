@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap'); */
 
 
 .main_bg{
     background:rgb(255, 255, 255);
-    max-width: 1280px;
+    /* max-width: 1280px; */
     /* height: 600px; */
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,8 +14,9 @@
     margin-top: 8rem;
 }
 .form-container{
-    width: 100%; /* Adjusted width for responsiveness */
+    width: 80%; /* Adjusted width for responsiveness */
     max-width: 650px;
+   
 }
 
 .form-text{
@@ -96,7 +98,16 @@
 
 @media screen and (max-width:710px) {
     .main-form{
-        text-align: center;
+        text-align: left;
+    }
+    .main_bg{
+     width: 100%;  
+    }
+    .form-text span img{
+        width: 13%;
+    }
+    .form-text h1{
+        font-size: 20px;
     }
 
 }

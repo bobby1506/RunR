@@ -3,6 +3,8 @@ ul {
   padding: 0px;
 }
 .footer-section {
+  /* overflow: hidden; */
+  padding: 2rem;
   background: #151414;
   position: relative;
 }

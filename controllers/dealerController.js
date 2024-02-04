@@ -40,16 +40,16 @@ exports.saveDealershipData = async (req, res) => {
 const sendEmailToOwner = async (dealership) => {
   try {
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
+      service: process.env.EMAIL_SERVICE,
       // secure:true,
       auth: {
-        user: 'bobby4footprints@gmail.com', // Replace with your email
-        pass: 'jsjn qltq fgnf xoty', // Replace with your email password or app-specific password
+        user: process.env.EMAIL_USER, // Replace with your email
+        pass: process.env.EMAIL_PASS, // Replace with your email password or app-specific password
       },
     });
 
     const mailOptions = {
-      from: `bobby4footprints@gmail.com`,
+      from: process.env.EMAIL_FROM,
       to: 'rekhaupreti7890@gmail.com', // Replace with the owner's email
       subject: 'New Booking',
       text: `

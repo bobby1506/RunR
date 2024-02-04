@@ -1,17 +1,29 @@
 import React, { useEffect, useState } from 'react';
-import './color.css'; // Import your CSS file
+import './color.css';
 import AOS from 'aos';
 import RunRfinal from "../../assets/hs.png"
 import RunRfinals from "../../assets/hsplus.png"
-import OrangeImage from '../../assets/gg.png';
-import WhiteImage from '../../assets/Whitee.png';
-import BlackImage from '../../assets/Blackk.png';
-import GreyImage from '../../assets/Greyy.png';
-import GreenImage from '../../assets/Greenn.png';
+import WhiteF from "../../assets/frontw.png"
+import WhiteL from "../../assets/leftw.png"
+import WhiteR from "../../assets/rightw.png"
+import GreenF from "../../assets/frontg.png"
+import GreenL from "../../assets/leftg.png"
+import GreenR from "../../assets/rightg.png"
+import GreyF from "../../assets/frontgr.png"
+import GreyL from "../../assets/leftgr.png"
+import GreyR from "../../assets/rightgr.png"
+import OrangeF from "../../assets/fronto.png"
+import OrangeL from "../../assets/lefto.png"
+import OrangeR from "../../assets/righto.png"
+import BlackF from "../../assets/frontb.png"
+import BlackL from "../../assets/leftb.png"
+import BlackR from "../../assets/rightb.png"
 import Heading from '../../Common/Headings/Heading';
+
 const Color = () => {
   const [selectedColor, setSelectedColor] = useState('Orange');
-
+  const [selectedColorRight, setSelectedColorRight] = useState('OrangeR');
+  const [selectedColorLeft, setSelectedColorLeft] = useState('OrangeL');
   useEffect(() => {
     AOS.init();
     window.addEventListener('load', AOS.refresh);
@@ -19,32 +31,66 @@ const Color = () => {
 
   const handleColorChange = (color) => {
     setSelectedColor(color);
+    setSelectedColorLeft(color);
+    setSelectedColorRight(color);
   };
 
   const getColorImage = () => {
     switch (selectedColor) {
       case 'White':
-        return WhiteImage;
+        return WhiteF;
       case 'Black':
-        return BlackImage;
+        return BlackF;
       case 'Orange':
-        return OrangeImage;
+        return OrangeF;
       case 'Grey':
-        return GreyImage;
+        return GreyF;
       case 'Green':
-        return GreenImage;
+        return GreenF;
       default:
-        return OrangeImage; // Default to Orange
+        return OrangeF; // Default to Orange
     }
   };
 
+  const getColorLeftImage = () => {
+    switch (selectedColorLeft) {
+      case 'White':
+        return WhiteL;
+      case 'Black':
+        return BlackL;
+      case 'Orange':
+        return OrangeL;
+      case 'Grey':
+        return GreyL;
+      case 'Green':
+        return GreenL;
+      default:
+        return OrangeL; // Default to Orange
+    }
+  };
+  const getColorRightImage = () => {
+    switch (selectedColorRight) {
+      case 'White':
+        return WhiteR;
+      case 'Black':
+        return BlackR;
+      case 'Orange':
+        return OrangeR;
+      case 'Grey':
+        return GreyR;
+      case 'Green':
+        return GreenR;
+      default:
+        return OrangeR; // Default to Orange
+    }
+  };
   return (
     <div className="main_color_div">
       <div className="blacks-container">
         <div className="white-box left-box">
           <div className="green_evvehicle">
             <img
-              src={getColorImage()}
+              src={getColorLeftImage()}
               alt=""
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
@@ -56,7 +102,7 @@ const Color = () => {
               data-aos-anchor-placement="center-bottom"
             />
              <img
-              src={getColorImage()}
+              src={getColorRightImage()}
               alt=""
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"

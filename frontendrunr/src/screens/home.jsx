@@ -1,4 +1,5 @@
 import React from 'react'
+import SwappingSquaresSpinner from './loader'
 import Landing from '../components/LandingPage/landing'
 // import About from '../components/About/about'
 import About from '../components/about/about'
@@ -11,6 +12,7 @@ const home = () => {
   return (
     <div>
         <div className="blocks" style={{background:'rgb(38, 36, 36)'}}>
+      
      <Landing/>   
      <About/>
      <Safety/>
@@ -19,7 +21,7 @@ const home = () => {
      <VideoPage/>
      <Media/>
     </div>
-    </div>
+     </div>
   )
 }
 

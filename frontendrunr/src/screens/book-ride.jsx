@@ -2,15 +2,18 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './book-ride.css'; // Import your CSS file
 import art from "../assets/art-1.png"
+import SwappingSquaresSpinner from './loader';
 const BookingForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     city: '',
-    model:'',
+    model: '',
     date: '',
     number: '',
   });
+
+  const [loading, setLoading] = useState(false); // Added loading state
 
   const config = {
     apiEndpoint: '/api/v1/submit', // Replace with your actual API endpoint
@@ -23,21 +26,35 @@ const BookingForm = () => {
     });
   };
 
-  
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+    setLoading(true); // Set loading to true before making the request
+
     try {
       const response = await axios.post(config.apiEndpoint, formData);
       console.log(response.data);
       alert('Form submitted successfully!');
+      setFormData({
+        name: '',
+        email: '',
+        city: '',
+        model: '',
+        date: '',
+        number: '',
+      }); // Clear the form data after successful submission
     } catch (error) {
       console.error('Error submitting form data:', error);
       alert('Error submitting form data. Please try again.');
+    } finally {
+      setLoading(false); // Set loading to false after the request is complete
     }
   };
 
   return (
+    <>
+    {loading ? (
+      <SwappingSquaresSpinner />
+    ) : (
     <div className="main_bg">
       <div className="form-container">
         <div className="form-text">
@@ -135,15 +152,18 @@ const BookingForm = () => {
                 required
               />
             </div>
+
             <div id="submit">
-              <input type="submit" value="SUBMIT" id="submit" />
+              {/* Disable the button when loading */}
+              <input type="submit" value="SUBMIT" id="submit" disabled={loading} />
             </div>
           </form>
         </div>
       </div>
     </div>
-  );
-};
+    )
+    }
+    </>)
+  };
 
 export default BookingForm;
-

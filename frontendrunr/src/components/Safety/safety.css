@@ -1,5 +1,4 @@
-.blackk-box{
-  
+.blackk-box{  
   display: flex; /* Use flex display for .right-box */
   flex-direction: column; /* Set the direction to column for proper stacking */
   align-items: center; /* Center items horizontally */
@@ -65,7 +64,7 @@ z-index: 5;
   }
 
  
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 840px) {
     /* Adjust styles for screens wider than 768px */
     .black-container {
       overflow-wrap: normal;
@@ -88,10 +87,10 @@ z-index: 5;
     .orange_ev span {
       z-index:-1;
       -webkit-text-stroke: 1px rgb(255, 255, 255);
-      margin-left:2rem;
-      font-size: 55px !important;
-      margin-top: 2rem !important;
-      font-weight: 700 !important; /* Adjust the font size as needed */
+      margin-left:0em;
+      font-size: 100px ;
+      margin-top: -6rem;
+      font-weight: 400 !important; /* Adjust the font size as needed */
     }
     
     .black-box {
@@ -108,8 +107,8 @@ z-index: 5;
       margin-left: 0rem;
     }
     .orange-box {
-    width: 100%;
-    height:300px;
+    width: 500px !important;
+    height:450px !important;
     margin-right: 0rem;
     margin-top: 1rem;
     }
@@ -137,7 +136,7 @@ z-index: 5;
     .blackk-box{
       overflow-x: hidden;
     margin-top: 4rem;
-      width: 100%;
+      width: 500px !important;
       /* height: 100%; */
       background-color: rgb(0, 0, 0);
       margin-right: 0rem;
@@ -256,17 +255,22 @@ z-index: 5;
   padding-top: 0rem;
 }
 @media screen and (max-width: 580px){
+  
+  .orange-box {
+    width: 530px;
+    height: 300px !important;
+  }
   .solid_safety h2 {
-    font-size: 41px !important;
+    font-size: 47px !important;
 }
 .liquid h4 {
-  font-size: 30px;
+  font-size: 30px !important;
 }
 .liquid span {
-  font-size: 29px;
+  font-size: 25px !important;
 }
 .warranty span {
-  font-size: 41px;
+  font-size: 41px !important;
 }
 .stopnot span{
  
@@ -280,14 +284,22 @@ z-index: 5;
   padding-top: 12rem !important;
 }
 .award img{
-  width: 25%;
+  width: 25% !important;
   z-index: -1;
   /* margin-top: -8rem; */
 }
 .award img{
   z-index: -1;
-  margin-left: 15rem;
+  margin-left: 15rem !important;
   padding-top: 0rem;
+}
+.orange_ev span {
+  z-index:-1;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  margin-left:0rem !important;
+  opacity: 0.6;
+  font-size:70px  !important;
+   padding-top: 3rem;
 }
 }
 
@@ -306,3 +318,141 @@ z-index: 5;
   padding-top: 24rem;
 }
 
+
+
+@media screen and (max-width:1280px){
+ 
+    .black-box {
+      width: 500px;
+      height: 450px;
+    }
+    
+    .orange-box {
+      width: 530px;
+      height: 450px;
+    }
+
+    .solid_safety h2 {
+      font-size: 60px;
+  }
+  .liquid h4 {
+    font-size: 38px;
+  }
+  .liquid span {
+    font-size: 27px;
+  }
+
+  .orange_ev span {
+    
+    font-size: 110px;
+     }
+     .blackk-box{  
+     
+     
+      width: 530px;
+      height: 450px;
+     
+    }
+    .blue-box{
+      width: 500px;
+      height: 450px;
+    }
+    .stopnot span{
+      font-size: 80px;
+      padding-right: 10rem; 
+    }
+    .stopnot{
+      padding-top: 23rem;
+    }
+    .award img{
+      margin-left: 18rem;
+      padding-top: 0rem;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  /* Adjust styles for screens wider than 768px */
+  .black-container {
+    overflow-wrap: normal;
+    position: relative;
+    flex-direction: column;
+    padding-top:2rem ;
+    height: auto; /* Set height to auto for responsiveness */
+  }
+
+.green_ev img{
+position:relative;
+z-index: 5;
+}
+  .orange_ev{
+    overflow: hidden;
+    width: 100%;
+    /* height: 100%; */
+  }
+  
+  .orange_ev span {
+    z-index:-1;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    margin-left:2rem;
+    opacity: 0.6;
+    font-size:140px ;
+    margin-top: 0rem ;
+    font-weight: 600 !important; /* Adjust the font size as needed */
+  }
+  
+  .black-box {
+    width: 100% !important;
+    margin: 0 auto;
+    background-color: rgb(0, 0, 0);
+  }
+
+  .blue-box {
+    width: 100% !important; /* Adjust width for large screens */
+    height: 100%; /* Adjust height to fill the container */
+   margin-top: 4rem;
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+  .orange-box {
+  width: 100% !important;
+  height:300px;
+  margin-right: 0rem;
+  margin-top: 1rem;
+  }
+  .orange_ev img {
+    position: relative;
+  margin-left: 0rem;
+  overflow-x: hidden;
+  /* width: 200%; */
+  max-width: 100%;
+  width: 140%;
+  /* max-width: 100%; Ensure the image doesn't exceed the container's width */
+  height: 0 auto; /* Ensure the image doesn't exceed the container's height */
+  /* margin-left: -20rem; */
+  z-index: 100;
+  opacity: 1;
+  
+  }
+
+
+
+  i::before {
+    font-size: 220px;
+  }
+
+  .blackk-box{
+    overflow-x: hidden;
+  margin-top: 4rem;
+    width: 100% !important;
+    /* height: 100%; */
+    background-color: rgb(0, 0, 0);
+    margin-right: 0rem;
+  }
+
+  .wrapperss{
+    justify-content: center;
+    margin: 0 auto; 
+}
+}

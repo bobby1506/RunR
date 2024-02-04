@@ -73,10 +73,12 @@ const Color = () => {
           </div>
         </div>
       </div>
-
-      <div className="lower_heading">
+<div className="main_head">
+<div className="lower_heading">
         <h3>"Discover Top-of-the-Line Features for Your #StopNot Journey an <span>#DesignedToSpendSmart</span> Experience."</h3>
       </div>
+</div>
+      
       <div className="logo_part">
         <div className="logos">
           <div className="left_image">

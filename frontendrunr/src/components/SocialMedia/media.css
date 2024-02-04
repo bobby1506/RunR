@@ -117,7 +117,7 @@
     
   }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:840px) {
   .Media {
     flex-direction: column;
     padding: 5px;

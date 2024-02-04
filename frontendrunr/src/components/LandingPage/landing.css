@@ -4,9 +4,11 @@
     align-items: center;
     justify-content: center;
     display: flex;
+    background-color: white;
+    /* box-shadow: 2px 2px; */
     /* margin-top: 4rem; */
     /* background-color: aliceblue !important; */
-    background: linear-gradient(167deg, #fb8247 0%, #fff 20%, #fff 80%, #5f5 100%);
+    /* background: linear-gradient(167deg, #fb8247 0%, #fff 20%, #fff 80%, #5f5 100%); */
 
 }
 
@@ -68,7 +70,7 @@
     margin-top: 8rem;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:840px) {
     .main_page{
    height: auto;
     }
@@ -138,4 +140,5 @@
     .img_head img{
         width: 100%;
     }
+ 
   }

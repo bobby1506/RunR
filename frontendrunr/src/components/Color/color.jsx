@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import {Link} from "react-router-dom";
 import './color.css';
 import AOS from 'aos';
 import RunRfinal from "../../assets/hs.png"
@@ -229,7 +230,8 @@ const Color = () => {
                     <h4>E-SCOOTER!</h4>
                   </div>
                   <div className="book_now">
-                     <button>BOOK NOW</button>
+                    <Link to="/testdrive">
+                     <button>BOOK NOW</button></Link>
                   </div>
                 </div>
             </div>
@@ -242,7 +244,8 @@ const Color = () => {
                     <h4>AND PROMOTE ECO-FRIENDLY PRODUCTS</h4>
                   </div>
                   <div className="book_now">
-                      <button>APPLY FOR DEALERSHIP</button>
+                    <Link to="/dealer">
+                      <button>APPLY FOR DEALERSHIP</button></Link>
                   </div>
                 </div>
             </div>

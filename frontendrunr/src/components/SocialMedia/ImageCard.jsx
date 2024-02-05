@@ -1,5 +1,6 @@
 import React from "react";
 import "./media.css"; // Import the CSS file
+import {Link} from "react-router-dom"
 
 export default function ImageCard({ children, imgSrc, link, ...props }) {
   const cardContent = (
@@ -11,10 +12,10 @@ export default function ImageCard({ children, imgSrc, link, ...props }) {
   return (
     <div {...props} className="ImageCard">
       {link ? (
-        <a href={link} target="_blank" rel="noopener noreferrer">
+        <Link to={link} target="_blank" rel="noopener noreferrer">
           <img src={imgSrc} alt="" />
           {cardContent}
-        </a>
+        </Link>
       ) : (
         <>
           <img src={imgSrc} alt="" />

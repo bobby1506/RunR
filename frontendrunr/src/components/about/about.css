@@ -4,7 +4,6 @@ body {
 }
 
 .black-container {
-  
   display: flex;
   position: relative;
   height: 100vh;
@@ -407,3 +406,15 @@ h4 {
   }
 }
 
+
+@media screen and (max-width:360px) {
+  .indigineous h3{
+    font-size: 40px !important;
+    margin-top: 10rem !important;
+    margin-left: 1.5rem !important;  
+  }
+  .content-box{
+    height:600px;
+  }
+  
+}

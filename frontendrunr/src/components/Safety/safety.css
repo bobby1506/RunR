@@ -456,3 +456,38 @@ z-index: 5;
     margin: 0 auto; 
 }
 }
+
+@media screen and (max-width:360px) {
+  .solid_safety h2 {
+    font-size: 32px !important;
+    
+}
+.liquid h4 {
+  font-size: 20px !important;
+}
+.liquid span {
+  font-size: 20px !important;
+}
+.orange_ev span {
+ 
+  font-size: 50px !important;
+ 
+  font-weight: 500; /* Adjust the font size as needed */
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  color: transparent;
+}
+.points_orange h4{
+  font-size: 15px;
+}
+
+.stopnot span{
+  font-size: 40px !important;
+  
+}
+.KMS h2{
+  font-size: 50px !important;
+}
+.warranty span{
+  font-size: 27px !important;
+}
+}

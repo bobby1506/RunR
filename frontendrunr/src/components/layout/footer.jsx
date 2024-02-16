@@ -11,60 +11,47 @@ import './footer.css';
 const Footer = () => {
   return (
     <footer className="footer-section" id='footer'>
-      <div className="container_footer">
-        <div className="footer-cta pt-5 pb-5">
+         <div className="footer-cta pt-5 pb-5 rebel">
           <div className="row">
             <div className="col-xl-4 col-md-4 mb-30">
+            </div>
+            <div className="col-xl-4 col-md-4 mb-30">
               <div className="single-cta">
-                <i className="fas"><FaRegAddressBook/></i>
                 <div className="cta-text">
-                  <h4>Find us</h4>
-                  <span>1010 Avenue, sw 54321, chandigarh</span>
+                  <h3>RAPID | RABEL | REVOLUTIONARY</h3>
                 </div>
               </div>
             </div>
             <div className="col-xl-4 col-md-4 mb-30">
-              <div className="single-cta">
-                <i className="fas"><MdAddIcCall /></i>
-                <div className="cta-text">
-                  <h4>Call us</h4>
-                  <span>9876543210 0</span>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-4 mb-30">
-              <div className="single-cta">
-                <i className="far"><MdMarkEmailUnread /></i>
-                <div className="cta-text">
-                  <h4>Mail us</h4>
-                  <span>marketing@runrmobility.com</span>
-                </div>
-              </div>
             </div>
           </div>
         </div>
+      <div className="container_footer">
+     
         <div className="footer-content pt-5 pb-5">
           <div className="row">
-          <div class="col-xl-4 col-lg-4 mb-50">
-          <div class="footer-widget">
-            <div class="footer-logo">
+          <div className="col-xl-4 col-lg-4 mb-50">
+          <div className="footer-widget">
+            <div className="footer-logo">
               <a href="index.html"><img src={RunRFinal} class="img-fluid" alt="logo"/></a>
             </div>
-            <div class="footer-text">
-              <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                elit,Lorem ipsum dolor sit amet.</p>
+            <div className="subscribe-form">
+              <form action="#">
+                {/* <input type="text" placeholder="Email Address"/> */}
+                {/* <button><i class="fab fa-telegram-plane"><BsInstagram/></i></button>
+                 */}
+                 <div className="qr">
+                 <img src={QR} alt="" />
+                 </div>
+                 
+              </form>
             </div>
-            <div class="footer-social-icon">
-              <span>Follow us</span>
-              <a href="#"><BsFacebook/><i class="fab"></i></a>
-              <a href="#"><BsInstagram/><i class="fab"></i></a>
-              <a href="#"><BsTwitter/><i class="fab"></i></a>
-            </div>
+           
           </div>
         </div>
-        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-          <div class="footer-widget">
-            <div class="footer-widget-heading">
+        <div className="col-xl-4 col-lg-4 col-md-6 mb-30">
+          <div className="footer-widget">
+            <div className="footer-widget-heading">
               <h3>Useful Links</h3>
             </div>
             <ul>
@@ -78,46 +65,26 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-          <div class="footer-widget">
-            <div class="footer-widget-heading">
-              <h3>Subscribe</h3>
+        <div className="col-xl-4 col-lg-4 col-md-6 mb-50">
+          <div className="footer-widget">
+            <div className="footer-widget-heading address">
+              <h3>Address</h3>
             </div>
-            <div class="footer-text mb-25">
-              <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+            <div className="footer-text mb-25">
+              <p>Green Wheelz Ev</p>
+              <p>Shop No 1 & 2 Gajanand Complex Opp Tube</p>
+              <p>Company, OP Road Vadodara Gujarat-390020</p>
+              <p><span>+91 6393207767</span>
+              </p>
             </div>
-            <div class="subscribe-form">
-              <form action="#">
-                {/* <input type="text" placeholder="Email Address"/> */}
-                {/* <button><i class="fab fa-telegram-plane"><BsInstagram/></i></button>
-                 */}
-                 <img src={QR} alt="" />
-              </form>
+            <div className="footer-social-icon">
+              <span>Follow us</span>
+              <a href="#" className='special'><BsFacebook/><i className="fab"></i></a>
+              <a href="#" className='special'><BsInstagram/><i className="fab"></i></a>
+              <a href="#"><BsTwitter/><i className="fab"></i></a>
             </div>
           </div>
         </div>
-          </div>
-        </div>
-      </div>
-      <div className="copyright-area">
-        <div className="container">
-          <div className="row">
-            <div className="col-xl-6 col-lg-6 text-center text-lg-left">
-              <div className="copyright-text">
-                <p>Copyright &copy; 2023, All Right Reserved <a href="/">RunR</a></p>
-              </div>
-            </div>
-            <div className="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-              <div className="footer-menu">
-                <ul>
-                  <li><Link to="/">Home</Link></li>
-                  <li><Link to="/blog">Blog</Link></li>
-                  <li><Link to="/testdrive">Test Drive</Link></li>
-                  <li><Link to="/dealer">Dealership</Link></li>
-                  <li><a href="#footer">Contact</a></li>
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
       </div>

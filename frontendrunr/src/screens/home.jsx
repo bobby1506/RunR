@@ -8,6 +8,7 @@ import Warranty from '../components/Warrenty/warranty'
 import VideoPage from '../components/Video/video'
 import Color from '../components/Color/color'
 import Media from '../components/SocialMedia/media'
+import Insta from '../components/Insta-feed/insta'
 const home = () => {
   return (
     <div>
@@ -20,6 +21,7 @@ const home = () => {
      <Color/>
      <VideoPage/>
      <Media/>
+     <Insta/>
     </div>
      </div>
   )

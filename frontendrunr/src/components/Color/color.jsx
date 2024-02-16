@@ -19,16 +19,29 @@ import OrangeR from "../../assets/righto.png"
 import BlackF from "../../assets/frontb.png"
 import BlackL from "../../assets/leftb.png"
 import BlackR from "../../assets/rightb.png"
+import Charge from "../../assets/charge.png"
+import Battery from "../../assets/battery.png"
+import Clustre from "../../assets/clustre.png"
+import Led from "../../assets/led.png"
+import Motor from "../../assets/motor.png"
+import Speed from "../../assets/speed.png"
+import Wheels from "../../assets/wheels.png"
+import AntiAlarm from "../../assets/antialarm.png"
 import Heading from '../../Common/Headings/Heading';
 
 const Color = () => {
   const [selectedColor, setSelectedColor] = useState('Orange');
   const [selectedColorRight, setSelectedColorRight] = useState('OrangeR');
   const [selectedColorLeft, setSelectedColorLeft] = useState('OrangeL');
+  // Add these lines after your existing state declarations
+const [isHovered, setIsHovered] = useState(false);
+const [hoveredColor, setHoveredColor] = useState('');
+
   useEffect(() => {
     AOS.init();
     window.addEventListener('load', AOS.refresh);
   }, []);
+
 
   const handleColorChange = (color) => {
     setSelectedColor(color);
@@ -49,7 +62,7 @@ const Color = () => {
       case 'Green':
         return GreenF;
       default:
-        return OrangeF; // Default to Orange
+        return OrangeF;
     }
   };
 
@@ -66,7 +79,7 @@ const Color = () => {
       case 'Green':
         return GreenL;
       default:
-        return OrangeL; // Default to Orange
+        return OrangeL;
     }
   };
   const getColorRightImage = () => {
@@ -82,13 +95,27 @@ const Color = () => {
       case 'Green':
         return GreenR;
       default:
-        return OrangeR; // Default to Orange
+        return OrangeR;
     }
   };
+
+  const handleHover = (color) => {
+    setIsHovered(!!color);
+    setHoveredColor(color);
+  };
+
+  
   return (
     <div className="main_color_div">
+       <Heading
+        className="taleido_heading"
+        id="glheading"
+        title="DISCOVER YOUR CHOICE"
+      />
       <div className="blacks-container">
+     
         <div className="white-box left-box">
+          <img src="https://res.cloudinary.com/dlf8u5l7a/image/upload/v1707759757/runr/cyhtyjakcwzu8yg6h5vs.jpg" alt="" />
           <div className="green_evvehicle">
             <img
               src={getColorLeftImage()}
@@ -112,12 +139,23 @@ const Color = () => {
           
           {/* Circles */}
           <div className="circle_main">
-            <div className={`circle white ${selectedColor === 'White' ? 'selected' : ''}`} onClick={() => handleColorChange('White')}></div>
-            <div className={`circle black ${selectedColor === 'Black' ? 'selected' : ''}`} onClick={() => handleColorChange('Black')}></div>
-            <div className={`circle orange ${selectedColor === 'Orange' ? 'selected' : ''}`} onClick={() => handleColorChange('Orange')}></div>
-            <div className={`circle grey ${selectedColor === 'Grey' ? 'selected' : ''}`} onClick={() => handleColorChange('Grey')}></div>
-            <div className={`circle green ${selectedColor === 'Green' ? 'selected' : ''}`} onClick={() => handleColorChange('Green')}></div>
-          </div>
+  <div className={`circle white ${selectedColor === 'White' ? 'selected' : ''}`} onMouseEnter={() => handleHover('White')} onMouseLeave={() => handleHover('')} onClick={() => handleColorChange('White')}>
+    {selectedColor === 'White' && isHovered && <div className="hovering">{hoveredColor}</div>}
+  </div>
+  <div className={`circle black ${selectedColor === 'Black' ? 'selected' : ''}`} onMouseEnter={() => handleHover('Black')} onMouseLeave={() => handleHover('')} onClick={() => handleColorChange('Black')}>
+    {selectedColor === 'Black' && isHovered && <div className="hovering">{hoveredColor}</div>}
+  </div>
+  <div className={`circle orange ${selectedColor === 'Orange' ? 'selected' : ''}`} onMouseEnter={() => handleHover('Orange')} onMouseLeave={() => handleHover('')} onClick={() => handleColorChange('Orange')}>
+    {selectedColor === 'Orange' && isHovered && <div className="hovering">{hoveredColor}</div>}
+  </div>
+  <div className={`circle grey ${selectedColor === 'Grey' ? 'selected' : ''}`} onMouseEnter={() => handleHover('Grey')} onMouseLeave={() => handleHover('')} onClick={() => handleColorChange('Grey')}>
+    {selectedColor === 'Grey' && isHovered && <div className="hovering">{hoveredColor}</div>}
+  </div>
+  <div className={`circle green ${selectedColor === 'Green' ? 'selected' : ''}`} onMouseEnter={() => handleHover('Green')} onMouseLeave={() => handleHover('')} onClick={() => handleColorChange('Green')}>
+    {selectedColor === 'Green' && isHovered && <div className="hovering">{hoveredColor}</div>}
+  </div>
+</div>
+
         </div>
       </div>
 <div className="main_head">
@@ -137,45 +175,45 @@ const Color = () => {
         </div>
       </div>
       <div className="tables">
-      <table className="container_table">
+      <table className="container_table equal-width-table">
 	<tbody>
 		<tr>
-			<td>Charge</td>
+			<td><img src={Charge} alt="" />Charge</td>
 			<td>130km/charge</td>
 			
 		</tr>
 		<tr>
-			<td>Speed</td>
+    <td><img src={Speed} alt="" />Speed</td>
 			<td>70 km/hour</td>
 
 		</tr>
 		<tr>
-			<td>Batteries</td>
+    <td><img src={Battery} alt="" />Batteries</td>
 			<td>60 v 29 Ah*2Li-on swappable batteries with can based BMS</td>
 		</tr>
     <tr>
-			<td>Wheels</td>
+    <td><img src={Wheels} alt="" />Wheels</td>
 			<td>Allow Wheels</td>
 		</tr>
     <tr>
-			<td>Motor</td>
+    <td><img src={Motor} alt="" />Motor</td>
 			<td>1.5/2.9 kw peak power BLDC motor</td>
 		</tr>
     <tr>
-			<td>LED</td>
+    <td><img src={Led} alt="" />LED</td>
 			<td>Luminous LED tail lights</td>	
 		</tr>
     <tr>
-			<td>Anti-theft Alarm</td>
+    <td><img src={AntiAlarm} alt="" />Anti-theft Alarm</td>
 			<td>Anti-theft alarm and device locator</td>
 		</tr>
     <tr>
-			<td>Clusture</td>
+    <td><img src={Clustre} alt="" />Clusture</td>
 			<td>Digital Cluster</td>
 		</tr>
 	</tbody>
 </table>
-<table className="containers_table">
+<table className="containers_table equal-width-table">
 	<tbody>
   <tr>
 			

@@ -4,6 +4,7 @@
 
 
 .container_dealer{
+    font-family:Helvetica;
      position:relative;
      /* max-width: 900px; */
      margin-top: 10rem !important;
@@ -33,7 +34,7 @@
     height: 3px;
     width: 27px;
     border-radius: 8px;
-    background-color: #4070f4;
+    background-color: #E6562A;
 }
 
 .container_dealer form{
@@ -67,6 +68,7 @@
 }
 
 form .fields .input-field{
+    font-family:Helvetica;
     display: flex;
     width: calc(100% / 3 - 15px);
     flex-direction: column;
@@ -75,6 +77,7 @@ form .fields .input-field{
 }
 
 .input-field label{
+    font-family:Helvetica;
     font-size: 12px;
     font-weight: 500;
     color: #2e2e2e;
@@ -124,7 +127,7 @@ form .fields .input-field{
     color: #fff;
     border-radius: 5px;
     margin: 25px 0;
-    background-color: #4070f4;
+    background-color: #E6562A
 }
 
 .container_dealer form button,
@@ -134,7 +137,7 @@ form .fields .input-field{
 }
 
 form button:hover{
-    background-color: #265df2;
+    background-color: #E6562A;
 }
 
 form button i,

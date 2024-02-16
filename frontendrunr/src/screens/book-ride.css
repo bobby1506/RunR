@@ -3,14 +3,12 @@
 
 .main_bg{
     background:rgb(255, 255, 255);
-    /* max-width: 1280px; */
-    /* height: 600px; */
     width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    border: 2px solid rgb(202, 252, 202);
+    border: 2px solid #f1edeb;
     margin-top: 8rem;
 }
 .form-container{
@@ -29,12 +27,13 @@
 }
 .form-text h1{
     color: #000000;
-    /* font-family: 'Akaya Telivigala', cursive; */
+    font-family: Helvetica;
     font-size: 40px;
     margin-bottom: 20px;
 }
 .form-text p{
     color: #000000;
+    font-family: Helvetica;
     /* font-family: 'Akaya Telivigala', cursive; */
     font-size: large;
 }
@@ -46,6 +45,7 @@
 }
 .main-form div input {
     width: 100%;
+    font-family: Helvetica;
     /* font-family: 'Akaya Telivigala', cursive; */
     background: none;
     border: 1px solid rgb(217, 247, 184);
@@ -78,6 +78,7 @@
     text-align: center;
 }
 #submit input{
+    font-family: Helvetica;
     /* font-family: 'Akaya Telivigala', cursive; */
     width: 200px;
     background-color: rgb(217, 247, 184) !important;

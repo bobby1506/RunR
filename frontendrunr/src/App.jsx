@@ -37,7 +37,7 @@ const App = () => {
             <SwappingSquaresSpinner />
           ) : (
             <>
-              <Footer />
+              {/* <Footer /> */}
               <BackToTopButton />
             </>
           )}

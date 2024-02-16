@@ -59,13 +59,13 @@ const BookingForm = () => {
       <div className="form-container">
         <div className="form-text">
           <h1>
-            <span>
+            {/* <span>
               <img src={art} alt="" />
-            </span>
+            </span> */}
             Book Your Drive{' '}
-            <span>
+            {/* <span>
               <img src={art} alt="" />
-            </span>
+            </span> */}
           </h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, fugit.</p>
         </div>
@@ -96,6 +96,19 @@ const BookingForm = () => {
               />
             </div>
             <div>
+              <span>Mobile</span>
+              <input
+                type="number"
+                name="number"
+                id="number"
+                placeholder="Write your number here..."
+                value={formData.number}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div>
+              
               <span>City</span>
               <select
                 name="city"
@@ -140,18 +153,7 @@ const BookingForm = () => {
                 required
               />
             </div>
-            <div>
-              <span>Mobile</span>
-              <input
-                type="number"
-                name="number"
-                id="number"
-                placeholder="Write your number here..."
-                value={formData.number}
-                onChange={handleChange}
-                required
-              />
-            </div>
+            
 
             <div id="submit">
               {/* Disable the button when loading */}

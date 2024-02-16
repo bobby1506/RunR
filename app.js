@@ -18,10 +18,12 @@ app.use(express.urlencoded({extended: true}));
 const media = require("./routes/mediaRoute");
 const dealer =require("./routes/dealerRoute");
 const testDrive = require("./routes/testdriveRoute");
+const insta = require("./routes/instaroute");
 // const user= require("./routes/userRoutes");
 app.use("/api/v1", media);
 app.use("/api/v1", dealer);
 app.use("/api/v1", testDrive);
+app.use("/api/v1", insta);
 //give the route to the api
 // app.use("/api/v1", user);
 

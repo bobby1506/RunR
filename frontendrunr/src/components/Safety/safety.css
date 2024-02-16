@@ -3,9 +3,8 @@
   flex-direction: column; /* Set the direction to column for proper stacking */
   align-items: center; /* Center items horizontally */
   justify-content: center; /* Center items vertically */
-  width: 550px;
-  height: 500px;
-  /* margin-bottom: 2rem; */
+  width: 600px;
+  height: 550px;
   background-color: rgb(0, 0, 0);
   margin-right: 4rem;
 }
@@ -17,11 +16,11 @@ z-index: 5;
 .blue-box{
   position: relative;
   display: flex; /* Allow flex properties to take effect */
-  width: 600px;
+  width: 700px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 500px;
+  height: 550px;
   background-color: #004AAD;
   margin-left: 4rem;
 }
@@ -29,7 +28,7 @@ z-index: 5;
   .black-box {
     display: flex; /* Allow flex properties to take effect */
     width: 600px;
-    height: 500px;
+    height: 550px;
     justify-content: flex-start;
     background-color: rgb(0, 0, 0);
     margin-left: 4rem;
@@ -40,8 +39,8 @@ z-index: 5;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 600px;
-    height: 500px;
+    width: 700px;
+    height: 550px;
     background-color: #F6744C;
     margin-right: 4rem;
   }
@@ -56,11 +55,14 @@ z-index: 5;
   }
 
   .orange_ev img {
-    width: 145%;
+    width: 125%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
     max-width: 150%; 
     max-height: 150%;
-    margin-top: 6rem;
-    /* margin-inline-start: 2rem;   */
+    /* margin-top: 6rem; */
+    margin-inline-start: -5rem;  
   }
 
  
@@ -168,7 +170,7 @@ z-index: 5;
     font-size:78px;
     font-weight: 500;
     padding: 1rem;
-    -webkit-text-stroke: 2.5px #0ef;
+    -webkit-text-stroke: 2.5px rgb(255, 255, 255);
   }
 
   .liquid h4 {
@@ -210,10 +212,10 @@ z-index: 5;
 
 .orange_ev span {
   position: absolute;
-  padding-top:7rem ;
+  padding-top:2rem ;
   z-index:-1;
   font-family: 'Anton', sans-serif;
-  font-size: 130px;
+  font-size: 140px;
   padding-left: 2rem;
   font-weight: 500; /* Adjust the font size as needed */
   -webkit-text-stroke: 4px rgba(255, 255, 255, 0.689);
@@ -235,8 +237,8 @@ z-index: 5;
   margin: 0;
   font-size: 60px;
   font-weight: 800;
-  -webkit-text-stroke: 1px rgb(255, 255, 255);
-  color: transparent;
+  font-weight: bolder;
+  color: white;
 }
 .award{
   position: absolute;
@@ -411,7 +413,7 @@ z-index: 5;
   .blue-box {
     width: 100% !important; /* Adjust width for large screens */
     height: 100%; /* Adjust height to fill the container */
-   margin-top: 4rem;
+   margin-top: 0rem;
     margin-right: 0rem;
     margin-left: 0rem;
   }
@@ -444,7 +446,7 @@ z-index: 5;
 
   .blackk-box{
     overflow-x: hidden;
-  margin-top: 4rem;
+  margin-top: 1rem;
     width: 100% !important;
     /* height: 100%; */
     background-color: rgb(0, 0, 0);

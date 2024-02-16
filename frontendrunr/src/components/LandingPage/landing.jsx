@@ -12,7 +12,7 @@ const Landing = () => {
   return (
     <div className="main_page">
       <div className="img_head">
-        <img src={Head} alt="" />
+        <img src="https://res.cloudinary.com/dlf8u5l7a/image/upload/v1707755685/runr/rmmdfo4xojsahd3bnriy.png" alt="" />
        
         </div>
         <div className="chakra">

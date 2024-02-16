@@ -13,7 +13,7 @@ export default function Media() {
         const fetchData = async () => {
             try {
                 const response = await axios.get('api/v1/media/getAll');
-                console.log(response.data);
+                // console.log(response.data);
                 // Assuming the actual data is in response.data.data
                 setMediaData(response.data);
             } catch (error) {

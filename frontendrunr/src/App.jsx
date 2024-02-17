@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import Home from "./screens/home.jsx";
 import Header from "./components/layout/header.jsx";
 import Footer from "./components/layout/footer.jsx";
@@ -17,6 +17,9 @@ const App = () => {
       setShowSplash(false);
     }, 3000);
   }, []);
+  
+
+
 
   return (
     <Router>
@@ -37,7 +40,7 @@ const App = () => {
             <SwappingSquaresSpinner />
           ) : (
             <>
-              {/* <Footer /> */}
+            <FooterConditionally/>
               <BackToTopButton />
             </>
           )}
@@ -46,5 +49,16 @@ const App = () => {
     </Router>
   );
 };
+
+const FooterConditionally=()=>{
+  const location=useLocation();
+
+  if(location.pathname=="/dealer" || location.pathname=="/testdrive"){
+    return null;
+  }
+
+  return <Footer/>
+
+}
 
 export default App;

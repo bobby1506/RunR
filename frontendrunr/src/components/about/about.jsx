@@ -38,24 +38,13 @@ const About = () => {
      data-aos-duration="2000"
     >
        
-            <h1>MADE IN INDIA</h1>
+            <h1>100% MADE IN INDIA </h1>
             <h2>MADE FOR INDIA</h2>
         </div>
         <div className="content" data-aos="fade-up"
      data-aos-anchor-placement="top-bottom">
-            <h6>We want you to get out there and have fun.
-RunR HS has been crafted with obsessive
-attention to detail. Each and every part is designed
-to make the urban, stop & go traffic more bearable.
-But before you get on the easy, comfy ride, here’s
-all the important stuff you need to read about. This
-quick start guide will tell you all about the features
-and components of the RunR HS, the RunR app,
-the battery pack & the Point. And while we’re
-thrilled the first kilometer of the electric revolution
-starts with you we know still have a long way to go
-until India and the rest of the world entirely go
-electric
+            <h6>RunR Mobility introducing the RunR HS: Affordable, cutting-edge EVs made entirely in India. With a design for everyone and built to tackle Indian roads, it's fast, affordable, and has incredibly low running costs. Truly Indian at heart, it's the perfect ride for modern urban living.
+
             </h6>
         </div>
         </div>

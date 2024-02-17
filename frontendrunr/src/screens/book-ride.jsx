@@ -77,7 +77,7 @@ const BookingForm = () => {
                 type="text"
                 name="name"
                 id="name"
-                placeholder="Write your name here..."
+                placeholder="Enter your name here..."
                 value={formData.name}
                 onChange={handleChange}
                 required
@@ -89,7 +89,7 @@ const BookingForm = () => {
                 type="email"
                 name="email"
                 id="email"
-                placeholder="Write your email here..."
+                placeholder="Enter your email here..."
                 value={formData.email}
                 onChange={handleChange}
                 required
@@ -101,7 +101,7 @@ const BookingForm = () => {
                 type="number"
                 name="number"
                 id="number"
-                placeholder="Write your number here..."
+                placeholder="Enter your number here..."
                 value={formData.number}
                 onChange={handleChange}
                 required

@@ -3,26 +3,41 @@
 
 .hovering{
   position: absolute;
-  top: 300px; 
-  left: 50%;
+  top: 350px; 
+  width: 150px;
+  left: 15%;
   transform: translateX(-50%);
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  background-color: #4d4c4c;
+  color: #fefefe;
+  text-align: center;
   padding: 5px;
   font-family: Helvetica;
   border-radius: 10px;
   z-index: 1;
   font-size: 20px;
 }
-.equal-width-table td {
-  width: 50%;
-}
+/* .equal-width-table td {
+  width: % !important;
+} */
 
+
+.first{
+  
+  width: 20% !important;
+}
 .container_table img{
   width: 17%;
-  margin-right: 2em;
+  /* margin-right: 2em; */
   
 }
+.containerss_table img{
+  width: 30%;
+  padding: 0.3em;
+  margin-left: 5em;
+  /* margin-right: 2em; */
+  
+}
+
 .container_table h1 {
   font-size: 3em;
   font-weight: 300;
@@ -79,10 +94,10 @@
 .container_table,.containers_table {
   text-align: left;
   overflow: hidden;
-  width: 43%;
+  /* width:100%; */
   margin: 0 auto;
   display: table;
-  padding: 0 0 8em 0;
+  /* padding: 0 0 8em 0; */
 }
 .container_table td,.containers_table td,
 .container_table,.containers_table {
@@ -134,7 +149,7 @@ border-radius: 20px 0 0 20px;
 
 .main_color_div{
   background-color: rgb(34, 33, 33);
-  padding: 0 20px; 
+  /* padding: 0 20px;  */
 }
 
 .green_evvehicle img {
@@ -147,7 +162,7 @@ border-radius: 20px 0 0 20px;
   margin: 0 auto;
   justify-content:center;
   align-items: center;
-  padding: 0 20px;
+  /* padding: 0 20px; */
 }
 
 .logos{
@@ -176,6 +191,7 @@ border-radius: 20px 0 0 20px;
 .white-box {
   position: relative;
   display:flex;
+  width: 100%;
   /* margin-top: 3rem !important; */
   justify-content: center;
   margin: 0 auto;
@@ -183,8 +199,8 @@ border-radius: 20px 0 0 20px;
   /* background-color: rgb(255, 255, 255); */
 }
 .white-box img{
-  width: 1325px;
-  height: 550px;
+  width:100%;
+  height:auto;
 }
 
 .green_evvehicle {
@@ -220,8 +236,8 @@ border-radius: 20px 0 0 20px;
 }
 
 .circle {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   margin-bottom: 10px;
   background-color: #3498db; /* Change the background color as needed */
@@ -432,8 +448,8 @@ border-radius: 20px 0 0 20px;
 }
 
 .book_now button {
-  color: white;
-  background-color: #515050;
+  color: rgb(255, 255, 255);
+  background-color: #E6562A;
   padding: 0.8rem;
   width: 300px;
   border-radius: 20px;
@@ -452,14 +468,9 @@ border-radius: 20px 0 0 20px;
 
 @media screen and (max-width:1280px) {
 
-  .white-box {
-  
-    width: 1000px;
-    height: 550px;
-   
-  }
+
   .green_evvehicle img {
-    margin: -9rem;
+    margin: -15rem;
    
   }
 }
@@ -520,17 +531,59 @@ border-radius: 20px 0 0 20px;
 }
 }
 
-@media screen and (max-width:580px) {
+@media screen and (max-width:600px) {
     .white-box img{
-      width: 140%;
+      width: 150% !important;
     }
     .book_now button{
       width: 100%;
       font-size: 11px;
     }
+    .containerss_table{
+      display: none;
+    }
     .left_image {
       margin-left: 3rem;
      padding-top: 1em;
     }
-  
+    .left_part{
+      display: block !important;
+    }
+    .left_part img{
+      width: 200% !important;
+      padding-left: 2em !important;
+      padding-bottom: 2em;
+    }
+    .right_part{
+      display: block !important;
+    }
+    .right_part img{
+      padding-left: 2em !important;
+      padding-bottom: 2em;
+      width: 200% !important;
+    }
+    .circle{
+      width: 35px;
+      height: 35px;
+    }
+  .image_new{
+    width: 100% !important;
+  }
+}
+
+.left_part{
+  display: flex;
+}
+.image_new{
+position: relative;
+width: 50%;
+padding-right: 1em;
+/* display: flex; */
+}
+.image_new img{
+  width: 80%;
+  padding-left:1em ;
+}
+.right_part{
+  display: flex;
 }

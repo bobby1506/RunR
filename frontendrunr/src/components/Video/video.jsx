@@ -14,7 +14,8 @@ const VideoPage = () => {
       <Heading
         className="taleido_heading"
         id="glheading"
-        title="WALKTHROUGH VIDEO"
+        title="Exclusive Sneak Peek: Explore Our Production Plant
+        "
       />
       <div className="video-container">
         <video ref={videoRef} controls>

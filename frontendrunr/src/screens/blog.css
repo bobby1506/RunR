@@ -87,7 +87,7 @@
 
 .taleido_heading {
     display: flex;
-    margin-left: 0;
+    /* margin-left: 0; */
 }
 
 .taleido_name {

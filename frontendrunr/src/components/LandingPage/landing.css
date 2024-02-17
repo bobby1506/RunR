@@ -65,9 +65,26 @@
 }
 
 .img_head{
+   
     z-index: 3;
     width: 100%;
     margin-top: 8rem;
+}
+
+.book_button{
+    position: absolute;
+    padding-top: 10rem;
+    margin: 2rem;
+}
+.book_button button{
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    
+    
+    color: white;
+    background-color: #E6562A;
+    
 }
 
 @media screen and (max-width:840px) {
@@ -138,7 +155,22 @@
     }
 
     .img_head img{
-        width: 100%;
+        width: 100% !important;
+    }
+    .book_button{
+        position: absolute;
+        padding-top: 2.5rem;
+        margin: 0.3rem;
+    }
+    .book_button button{
+        border-radius: 20px;
+        width: 50px;
+        height: 20px;
+        font-size: 7px;
+        
+        color: white;
+        background-color: #E6562A;
+        
     }
  
   }

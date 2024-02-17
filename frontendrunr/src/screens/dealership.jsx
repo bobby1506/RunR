@@ -188,7 +188,7 @@ const DealershipForm = () => {
        <div className="container_dealer">
                  <header>Registration</header>
          <form onSubmit={handleSubmit}>
-           <div className="form first">
+           <div className="form firsts">
              <div className="details personal">
                <span className='title'>Applicant Details</span>
 

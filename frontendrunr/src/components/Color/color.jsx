@@ -28,6 +28,8 @@ import Speed from "../../assets/speed.png"
 import Wheels from "../../assets/wheels.png"
 import AntiAlarm from "../../assets/antialarm.png"
 import Heading from '../../Common/Headings/Heading';
+import BookNow from '../../assets/1.jpeg';
+import Dealer from "../../assets/2.jpg";
 
 const Color = () => {
   const [selectedColor, setSelectedColor] = useState('Orange');
@@ -110,7 +112,8 @@ const [hoveredColor, setHoveredColor] = useState('');
        <Heading
         className="taleido_heading"
         id="glheading"
-        title="DISCOVER YOUR CHOICE"
+        title="Explore the World with a Palette of 5 Stunning Colors!
+        "
       />
       <div className="blacks-container">
      
@@ -139,19 +142,19 @@ const [hoveredColor, setHoveredColor] = useState('');
           
           {/* Circles */}
           <div className="circle_main">
-  <div className={`circle white ${selectedColor === 'White' ? 'selected' : ''}`} onMouseEnter={() => handleHover('White')} onMouseLeave={() => handleHover('')} onClick={() => handleColorChange('White')}>
+  <div className={`circle white ${selectedColor === 'White' ? 'selected' : ''}`} onMouseEnter={() => handleHover('Pebble White')} onMouseLeave={() => handleHover('')} onClick={() => handleColorChange('White')}>
     {selectedColor === 'White' && isHovered && <div className="hovering">{hoveredColor}</div>}
   </div>
-  <div className={`circle black ${selectedColor === 'Black' ? 'selected' : ''}`} onMouseEnter={() => handleHover('Black')} onMouseLeave={() => handleHover('')} onClick={() => handleColorChange('Black')}>
+  <div className={`circle black ${selectedColor === 'Black' ? 'selected' : ''}`} onMouseEnter={() => handleHover('Midnight Black')} onMouseLeave={() => handleHover('')} onClick={() => handleColorChange('Black')}>
     {selectedColor === 'Black' && isHovered && <div className="hovering">{hoveredColor}</div>}
   </div>
-  <div className={`circle orange ${selectedColor === 'Orange' ? 'selected' : ''}`} onMouseEnter={() => handleHover('Orange')} onMouseLeave={() => handleHover('')} onClick={() => handleColorChange('Orange')}>
+  <div className={`circle orange ${selectedColor === 'Orange' ? 'selected' : ''}`} onMouseEnter={() => handleHover('Sunset Orange')} onMouseLeave={() => handleHover('')} onClick={() => handleColorChange('Orange')}>
     {selectedColor === 'Orange' && isHovered && <div className="hovering">{hoveredColor}</div>}
   </div>
-  <div className={`circle grey ${selectedColor === 'Grey' ? 'selected' : ''}`} onMouseEnter={() => handleHover('Grey')} onMouseLeave={() => handleHover('')} onClick={() => handleColorChange('Grey')}>
+  <div className={`circle grey ${selectedColor === 'Grey' ? 'selected' : ''}`} onMouseEnter={() => handleHover('Carbon Grey')} onMouseLeave={() => handleHover('')} onClick={() => handleColorChange('Grey')}>
     {selectedColor === 'Grey' && isHovered && <div className="hovering">{hoveredColor}</div>}
   </div>
-  <div className={`circle green ${selectedColor === 'Green' ? 'selected' : ''}`} onMouseEnter={() => handleHover('Green')} onMouseLeave={() => handleHover('')} onClick={() => handleColorChange('Green')}>
+  <div className={`circle green ${selectedColor === 'Green' ? 'selected' : ''}`} onMouseEnter={() => handleHover('Forest Green')} onMouseLeave={() => handleHover('')} onClick={() => handleColorChange('Green')}>
     {selectedColor === 'Green' && isHovered && <div className="hovering">{hoveredColor}</div>}
   </div>
 </div>
@@ -167,53 +170,86 @@ const [hoveredColor, setHoveredColor] = useState('');
       <div className="logo_part">
         <div className="logos">
           <div className="left_image">
-            <img src={RunRfinal} alt="" />
+            <img src={RunRfinals} alt="" />
           </div>
           <div className="right_image">
-            <img src={RunRfinals} alt="" />
+            <img src={RunRfinal} alt="" />
           </div>
         </div>
       </div>
       <div className="tables">
-      <table className="container_table equal-width-table">
+      <table className="containerss_table first">
 	<tbody>
 		<tr>
-			<td><img src={Charge} alt="" />Charge</td>
+			<td><img src={Charge} alt="" /></td>
+
+			
+		</tr>
+		<tr>
+    <td><img src={Speed} alt="" /></td>
+
+
+		</tr>
+		<tr>
+    <td><img src={Battery} alt="" /></td>
+		
+		</tr>
+    <tr>
+    <td><img src={Wheels} alt="" /></td>
+		</tr>
+    <tr>
+    <td><img src={Motor} alt="" /></td>
+		</tr>
+    <tr>
+    <td><img src={Led} alt="" /></td>
+		</tr>
+    <tr>
+    <td><img src={AntiAlarm} alt="" /></td>
+		</tr>
+    <tr>
+    <td><img src={Clustre} alt="" /></td>
+		</tr>
+	</tbody>
+</table>
+      <table className="container_table">
+	<tbody>
+		<tr>
+	
 			<td>130km/charge</td>
 			
 		</tr>
 		<tr>
-    <td><img src={Speed} alt="" />Speed</td>
+ 
 			<td>70 km/hour</td>
 
 		</tr>
 		<tr>
-    <td><img src={Battery} alt="" />Batteries</td>
+  
 			<td>60 v 29 Ah*2Li-on swappable batteries with can based BMS</td>
 		</tr>
     <tr>
-    <td><img src={Wheels} alt="" />Wheels</td>
+
 			<td>Allow Wheels</td>
 		</tr>
     <tr>
-    <td><img src={Motor} alt="" />Motor</td>
+
 			<td>1.5/2.9 kw peak power BLDC motor</td>
 		</tr>
     <tr>
-    <td><img src={Led} alt="" />LED</td>
+
 			<td>Luminous LED tail lights</td>	
 		</tr>
     <tr>
-    <td><img src={AntiAlarm} alt="" />Anti-theft Alarm</td>
+
 			<td>Anti-theft alarm and device locator</td>
 		</tr>
     <tr>
-    <td><img src={Clustre} alt="" />Clusture</td>
+  
 			<td>Digital Cluster</td>
 		</tr>
 	</tbody>
 </table>
-<table className="containers_table equal-width-table">
+<table className="containers_table">
 	<tbody>
   <tr>
 			
@@ -261,6 +297,9 @@ const [hoveredColor, setHoveredColor] = useState('');
           />
           <div className="buttons">
             <div className="left_part">
+              <div className="image_new">
+                <img src={BookNow} alt="" />
+              </div>
                 <div className="content">
                   <div className="details">
                     <h4>STYLE, SAVINGS AND SUSTAINAIBILITY</h4>
@@ -275,6 +314,9 @@ const [hoveredColor, setHoveredColor] = useState('');
             </div>
             <div className="separator"></div>
             <div className="right_part">
+            <div className="image_new">
+                <img src={Dealer} alt="" />
+              </div>
                 <div className="content">
                   <div className="details">
                   <h4>OWN A BUSINESS THAT MAKES A</h4>

@@ -15,7 +15,7 @@ function Heading(props) {
         <>
 
             <header data-aos="zoom-in-up" className='headerss' id="headingsOfAll">
-                <button><h2 className={`heading_segment ${props.className}`} id={props.id} >{props.title}</h2></button>
+                <h2 className={`heading_segment ${props.className}`} id={props.id} >{props.title}</h2>
             </header>
 
         </>

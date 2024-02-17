@@ -80,11 +80,14 @@
     border-radius: 20px;
     width: 150px;
     height: 40px;
-    
+    font-weight:600;
     
     color: white;
     background-color: #E6562A;
     
+}
+.book_button button:hover{
+    font-size: 20px;
 }
 
 @media screen and (max-width:840px) {

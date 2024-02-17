@@ -4,6 +4,7 @@ import './about.css'; // Import your CSS file
 import GreenEv from "../../assets/green.png";
 import Hundred from "../../assets/hunderd.png";
 import AOS from 'aos'
+import Satyamev from "../../assets/satyamev.png"
 const About = () => {
 
   useEffect(()=>{
@@ -50,9 +51,10 @@ const About = () => {
         </div>
        
       <div className="wrapper">
+          {/* <i class="zmdi zmdi-chevron-up"></i>
           <i class="zmdi zmdi-chevron-up"></i>
-          <i class="zmdi zmdi-chevron-up"></i>
-          <i class="zmdi zmdi-chevron-up"></i>
+          <i class="zmdi zmdi-chevron-up"></i> */}
+          <img src={Satyamev} alt="" />
           </div>
       </div>
     </div>

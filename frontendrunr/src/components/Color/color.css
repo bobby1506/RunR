@@ -153,7 +153,7 @@ border-radius: 20px 0 0 20px;
 }
 
 .green_evvehicle img {
-  margin: -15rem;
+  margin: -19rem;
   width: 60% !important;
   transition: transform 0.5s ease-in-out; /* Add transition property */
 }
@@ -162,6 +162,7 @@ border-radius: 20px 0 0 20px;
   margin: 0 auto;
   justify-content:center;
   align-items: center;
+  background-color: rgb(34, 33, 33);
   /* padding: 0 20px; */
 }
 

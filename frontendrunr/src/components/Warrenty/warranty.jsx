@@ -23,14 +23,18 @@ const Warranty = () => {
         <img src={Award} alt="" />
         </div>
         <div className="stopnot">
-        <span>#STOPNOT</span>
+        <span>WARRANTY</span>
+        
+        </div>
+        <div className="assured">
+          <span>ASSURED</span>
         </div>
       </div>
       <div className="blackk-box right-box" data-aos="zoom-in-left">
       
         <div className="main_content">
         <div className="KMS">
-          <h2>Empowering Your Journey with an 85,000 km Warranty
+          <h2>Comprehensive Warranty UPTO 85,000 KM
 </h2>
         </div>
         <div className="warranty">

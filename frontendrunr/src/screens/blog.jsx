@@ -2,7 +2,9 @@ import React, {useEffect} from 'react'
 import TaleidoData from "../Data/Taleido";
 import "./blog.css";
 import AOS from 'aos';
+
 import Heading from "../Common/Headings/Heading";
+
 function Blog() {
 
   useEffect(() => {

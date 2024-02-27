@@ -34,8 +34,9 @@ const Warranty = () => {
       
         <div className="main_content">
         <div className="KMS">
-          <h2>Comprehensive Warranty UPTO 85,000 KM
-</h2>
+          <h1>Comprehensive Warranty UPTO 85,000 KM
+</h1>
+<h2>Discover the Extensive Benefits today!</h2>
         </div>
         <div className="warranty">
           <span>Enjoy peace of mind with the RunR HS, boasting an 85,000 km warranty. Drive confidently knowing your journey is covered.

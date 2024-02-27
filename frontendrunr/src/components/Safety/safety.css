@@ -249,26 +249,34 @@ z-index: 5;
   font-weight: 500; /* Adjust the font size as needed */
   -webkit-text-stroke: 4px rgba(255, 255, 255, 0.689);
   color: transparent;
+  align-items: center;
+  text-align: center;
 }
 
-
+.KMS h1{
+  background: linear-gradient(to right, #FF9933, #FFFFFF, #138808); /* Indian flag colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-stroke: 2.5px #00000065;
+  font-size: 60px !important;
+  font-weight: 600;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 0.4em;
+}
 
 .KMS h2{
-  /* display: block; */
-  /* margin: 0 auto; */
-  /* text-align: center; */
-  font-size: 20px !important;
-  margin-bottom: 2em;
-  /* font-weight: 600 !important; */
-  font-family:  Helvetica !important;
-  padding: 0rem;
-  /* color:aliceblue; */
-  font-size:50px !important;
-  /* padding: 1rem; */
-  /* margin:1em; */
-  top: 0;
-  -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+  background: linear-gradient(to right, #FF9933, #FFFFFF, #138808); /* Indian flag colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2.5px #0000005b;
+  font-size: 45px;
+  font-weight: 500;
+  /* padding-bottom: 2em; */
+  text-align: center;
 }
+
 
 .warranty span {
   margin: 0;

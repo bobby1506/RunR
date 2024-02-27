@@ -30,8 +30,11 @@ import AntiAlarm from "../../assets/antialarm.png"
 import Heading from '../../Common/Headings/Heading';
 import BookNow from '../../assets/1.jpeg';
 import Dealer from "../../assets/2.jpg";
+import Grey from "../../assets/orange.png";
 
 const Color = () => {
+
+
   const [selectedColor, setSelectedColor] = useState('Orange');
   const [selectedColorRight, setSelectedColorRight] = useState('OrangeR');
   const [selectedColorLeft, setSelectedColorLeft] = useState('OrangeL');
@@ -108,16 +111,18 @@ const [hoveredColor, setHoveredColor] = useState('');
 
   
   return (
-    <div className="main_color_div">
-       <Heading
+    <div className="main_color_div">    
+      <div className="blacks-container">
+      <div className="head">
+      <Heading
         className="taleido_heading"
         id="glheading"
         title="Explore the World with a Palette of 5 Stunning Colors!
         "
       />
-      <div className="blacks-container">
-     
+      </div>
         <div className="white-box left-box">
+     
           <img src="https://res.cloudinary.com/dlf8u5l7a/image/upload/v1707759757/runr/cyhtyjakcwzu8yg6h5vs.jpg" alt="" />
           <div className="green_evvehicle">
             <img
@@ -287,6 +292,10 @@ const [hoveredColor, setHoveredColor] = useState('');
 		</tr>
 	</tbody>
 </table>
+<div className="grey_img">
+<img src={Grey} alt="s" data-aos="fade-left"
+     />
+</div>
       </div>
 
       <div className="button_group">
@@ -302,9 +311,9 @@ const [hoveredColor, setHoveredColor] = useState('');
               </div>
                 <div className="content">
                   <div className="details">
-                    <h4>STYLE, SAVINGS AND SUSTAINAIBILITY</h4>
-                    <h4>FUSED-ONLY IN RUNR'S </h4>
-                    <h4>E-SCOOTER!</h4>
+                    <h4>STYLE, SAVINGS AND SUSTAINAIBILITY
+                    <br />FUSED-ONLY IN RUNR'S 
+                    <br />E-SCOOTER!</h4>
                   </div>
                   <div className="book_now">
                     <Link to="/testdrive">
@@ -314,14 +323,15 @@ const [hoveredColor, setHoveredColor] = useState('');
             </div>
             <div className="separator"></div>
             <div className="right_part">
+         
             <div className="image_new">
                 <img src={Dealer} alt="" />
               </div>
-                <div className="content">
+              <div className="content">
                   <div className="details">
-                  <h4>OWN A BUSINESS THAT MAKES A</h4>
-                    <h4>DIFFERENCE. BECOME A DEALER TODAY </h4>
-                    <h4>AND PROMOTE ECO-FRIENDLY PRODUCTS</h4>
+                  <h4>OWN A BUSINESS THAT MAKES A
+                    <br /> DIFFERENCE. BECOME A DEALER TODAY
+                    <br /> AND PROMOTE ECO-FRIENDLY PRODUCTS</h4>
                   </div>
                   <div className="book_now">
                     <Link to="/dealer">

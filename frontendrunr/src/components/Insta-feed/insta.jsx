@@ -3,6 +3,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import './insta.css';
 import Heading from '../../Common/Headings/Heading';
 import axios from 'axios';
+import { BASE_URL } from '../../apiConfig';
 
 export default function Insta() {
   const [feed, setFeed] = useState(null);
@@ -11,7 +12,8 @@ export default function Insta() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const urlResponse = await axios.post('/api/v1/getinstaurl');
+        // const urlResponse = await axios.post('/api/v1/getinstaurl');
+        const urlResponse = await axios.post(`${BASE_URL}/api/v1/getinstaurl`);
         const url = urlResponse.data.url;
         const dataResponse = await fetch(url);
 

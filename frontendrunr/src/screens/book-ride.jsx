@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './book-ride.css'; // Import your CSS file
-import art from "../assets/art-1.png"
+import './book-ride.css'; 
 import SwappingSquaresSpinner from './loader';
+import { BASE_URL } from '../apiConfig';
+import Test from "../assets/testdrive.png"
 const BookingForm = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -16,7 +17,8 @@ const BookingForm = () => {
   const [loading, setLoading] = useState(false); // Added loading state
 
   const config = {
-    apiEndpoint: '/api/v1/submit', // Replace with your actual API endpoint
+    // apiEndpoint: '/api/v1/submit', // for localhost
+    apiEndpoint: `${BASE_URL}/api/v1/submit`, 
   };
 
   const handleChange = (e) => {
@@ -55,17 +57,15 @@ const BookingForm = () => {
     {loading ? (
       <SwappingSquaresSpinner />
     ) : (
+    <div className="background-container">
+      <div className="main_bgtest">
+      <img src={Test} alt="" />
+      </div>
     <div className="main_bg">
       <div className="form-container">
         <div className="form-text">
           <h1>
-            {/* <span>
-              <img src={art} alt="" />
-            </span> */}
             Book Your Drive{' '}
-            {/* <span>
-              <img src={art} alt="" />
-            </span> */}
           </h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, fugit.</p>
         </div>
@@ -162,6 +162,7 @@ const BookingForm = () => {
           </form>
         </div>
       </div>
+    </div>
     </div>
     )
     }

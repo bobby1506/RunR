@@ -12,6 +12,7 @@
 /build
 .env
 /config/config.env
+/apiConfig.js
 
 # misc
 .DS_Store

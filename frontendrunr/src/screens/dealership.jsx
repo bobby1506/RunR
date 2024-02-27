@@ -3,7 +3,9 @@ import React, { useState, useEffect } from 'react';
 import Select from 'react-select';
 import axios from 'axios';
 import "./dealership.css";
+import Test from "../assets/testdrive.png"
 import SwappingSquaresSpinner from './loader';
+import { BASE_URL } from '../apiConfig';
 
 const DealershipForm = () => {
   const [selectedCountry, setSelectedCountry] = useState('');
@@ -46,7 +48,8 @@ const DealershipForm = () => {
   const config = {
     cUrl: 'https://api.countrystatecity.in/v1/countries',
     ckey: 'VmRaQTAwUmEzN3o2VjJ1U0NOMThuNWVTZjhEZFY3SnQycTFOdURjbw==',
-    apiEndpoint: '/api/v1/save', // Replace with your actual API endpoint
+    apiEndpoint: `${BASE_URL}/api/v1/save`, // Replace with your actual API endpoint
+    // apiEndpoint: `/api/v1/save`, //for localhost
   };
 
   useEffect(() => {
@@ -186,10 +189,13 @@ const DealershipForm = () => {
     ) : (
     <div>
        <div className="container_dealer">
+       <div className="main_bgtest">
+      <img src={Test} alt="" />
+      </div>
                  <header>Registration</header>
          <form onSubmit={handleSubmit}>
            <div className="form firsts">
-             <div className="details personal">
+             <div className="detailss personal">
                <span className='title'>Applicant Details</span>
 
                <div className="fields">
@@ -244,7 +250,7 @@ const DealershipForm = () => {
               </div>
             </div>
 
-            <div className="details ID">
+            <div className="detailss ID">
               <span className='title'>Existing Business Details</span>
 
               <div className="fields">
@@ -283,7 +289,7 @@ const DealershipForm = () => {
                 />
               </div>
               </div>
-              <div className="details personal">
+              <div className="detailss personal">
                 <span className='title'>Location Applied For</span>
 
                 <div className="fields">
@@ -336,7 +342,7 @@ const DealershipForm = () => {
                   </div>
                 </div>
                 </div>
-                <div className="details personal">
+                <div className="detailss personal">
                   <span className='title'>Proposed Premises Details</span>
 
                   <div className="fields">

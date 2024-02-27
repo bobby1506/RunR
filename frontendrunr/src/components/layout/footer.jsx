@@ -2,6 +2,7 @@ import React from 'react';
 import RunRFinal from './RunRFinal.png';
 import { Link } from 'react-router-dom';
 import {BsFacebook,BsInstagram, BsTwitter} from "react-icons/bs"
+import { FaLinkedin } from "react-icons/fa6";
 import { FaRegAddressBook } from "react-icons/fa";
 import { MdAddIcCall } from "react-icons/md";
 import { MdMarkEmailUnread } from "react-icons/md";
@@ -81,7 +82,7 @@ const Footer = () => {
               <span>Follow us</span>
               <a href="#" className='special'><BsFacebook/><i className="fab"></i></a>
               <a href="#" className='special'><BsInstagram/><i className="fab"></i></a>
-              <a href="#"><BsTwitter/><i className="fab"></i></a>
+              <a href="#"><FaLinkedin/><i className="fab"></i></a>
             </div>
           </div>
         </div>

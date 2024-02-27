@@ -307,7 +307,7 @@ const [hoveredColor, setHoveredColor] = useState('');
           <div className="buttons">
             <div className="left_part">
               <div className="image_new">
-                <img src={BookNow} alt="" />
+                <img src={Dealer} alt="" />
               </div>
                 <div className="content">
                   <div className="details">
@@ -324,10 +324,12 @@ const [hoveredColor, setHoveredColor] = useState('');
             <div className="separator"></div>
             <div className="right_part">
          
-            <div className="image_new">
-                <img src={Dealer} alt="" />
-              </div>
+           
               <div className="content">
+
+              <div className="image_new">
+                <img src={BookNow} alt="" />
+              </div>
                   <div className="details">
                   <h4>OWN A BUSINESS THAT MAKES A
                     <br /> DIFFERENCE. BECOME A DEALER TODAY

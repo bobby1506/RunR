@@ -67,7 +67,8 @@ const BookingForm = () => {
           <h1>
             Book Your Drive{' '}
           </h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, fugit.</p>
+          <p>Experience the future with our 100% Made in India E-Scooter!
+</p>
         </div>
         <div className="main-form">
           <form onSubmit={handleSubmit}>

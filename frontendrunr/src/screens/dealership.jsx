@@ -192,7 +192,7 @@ const DealershipForm = () => {
        <div className="main_bgtest">
       <img src={Test} alt="" />
       </div>
-                 <header>Registration</header>
+                 <header>Registration </header>
          <form onSubmit={handleSubmit}>
            <div className="form firsts">
              <div className="detailss personal">

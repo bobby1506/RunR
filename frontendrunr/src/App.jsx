@@ -8,6 +8,7 @@ import TestDerive from "./screens/book-ride.jsx";
 import Blog from "./screens/blog.jsx";
 import BackToTopButton from "./components/backtobutton.jsx";
 import SwappingSquaresSpinner from "./screens/loader.jsx";
+import About from "./components/Aboutnew/aboutnew.jsx";
 
 const App = () => {
   const [showSplash, setShowSplash] = useState(true);
@@ -33,6 +34,7 @@ const App = () => {
             <Route path="/dealer" element={<Dealership />} />
             <Route path="/testdrive" element={<TestDerive />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/about" element={<About />} />
           </Routes>
 
           {/* Conditionally render Footer or LoadingScreen */}
@@ -53,7 +55,7 @@ const App = () => {
 const FooterConditionally=()=>{
   const location=useLocation();
 
-  if(location.pathname=="/dealer" || location.pathname=="/testdrive"){
+  if(location.pathname=="/dealer" || location.pathname=="/testdrive" || location.pathname=="/about"){
     return null;
   }
 

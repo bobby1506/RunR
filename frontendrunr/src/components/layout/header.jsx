@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AiOutlineMenuFold, AiOutlineCloseCircle } from 'react-icons/ai';
 import RunRFinal from './RunRFinal.png';
+import pdf from "../../assets/ebrochure.pdf"
 import './header.css';
 
 const Header = () => {
@@ -15,6 +16,28 @@ const Header = () => {
     setMenuVisible(false);
   };
 
+  function downloadBrochure() {
+    // Assuming 'brochure.pdf' is the name of your brochure file
+    const brochureUrl = pdf;
+    
+    // Create an anchor element
+    const link = document.createElement('a');
+  
+    // Set the href attribute to the URL of the brochure file
+    link.href = brochureUrl;
+  
+    // Set the download attribute to specify the default file name
+    link.download = 'ebrochure.pdf';
+  
+    // Append the anchor element to the body
+    document.body.appendChild(link);
+  
+    // Trigger a click event on the anchor element
+    link.click();
+  
+    // Remove the anchor element from the body
+    document.body.removeChild(link);
+  }
   return (
     <div>
       <header className={`header ${menuVisible ? 'show-menu' : ''}`} id='header'>
@@ -40,13 +63,18 @@ const Header = () => {
                 </Link>
               </li>
               <li className='nav__item' onClick={closeMenu}>
-                <a href='#about' className='nav__link'>
+                <a href='/about' className='nav__link'>
                   ABOUT US
                 </a>
               </li>
               <li className='nav__item' onClick={closeMenu}>
                 <a href='#footer' className='nav__link'>
                   CONTACT US
+                </a>
+              </li>
+              <li className='nav__item' onClick={() => { closeMenu(); downloadBrochure(); }}>
+                <a href='#' className='nav__link'>
+                   DOWNLOAD E-BROCHURE
                 </a>
               </li>
             </ul>

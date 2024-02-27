@@ -4,6 +4,7 @@ import './media.css';
 import axios from 'axios';
 import AOS from 'aos';
 import Heading from "../../Common/Headings/Heading";
+import { BASE_URL } from "../../apiConfig";
 
 export default function Media() {
     const [mediaData, setMediaData] = useState([]);
@@ -12,7 +13,8 @@ export default function Media() {
         // Fetch data from the server when the component mounts
         const fetchData = async () => {
             try {
-                const response = await axios.get('api/v1/media/getAll');
+                // const response = await axios.get('api/v1/media/getAll');
+                const response = await axios.get(`${BASE_URL}/api/v1/media/getAll`);
                 // console.log(response.data);
                 // Assuming the actual data is in response.data.data
                 setMediaData(response.data);

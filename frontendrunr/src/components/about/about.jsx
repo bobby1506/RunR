@@ -51,9 +51,6 @@ const About = () => {
         </div>
        
       <div className="wrapper">
-          {/* <i class="zmdi zmdi-chevron-up"></i>
-          <i class="zmdi zmdi-chevron-up"></i>
-          <i class="zmdi zmdi-chevron-up"></i> */}
           <img src={Satyamev} alt="" />
           </div>
       </div>

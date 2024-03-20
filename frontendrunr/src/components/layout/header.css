@@ -4,7 +4,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: var(--z-fixed);
+    z-index: 1000000;
+
   }
   
   .nav {
@@ -42,7 +43,7 @@
   }
 
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 830px) {
     .nav__menu {
       position: fixed;
       background-color: hsla(0, 0%, 0%, 0.808);
@@ -83,7 +84,7 @@
       
   }
   
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 830px) {
     .nav__toggle,
     .nav__close {
       display: none; /* Hide the icons on big screens */
@@ -130,4 +131,12 @@
   
   .show-menu .nav__menu {
     right: 0;
+  }
+
+  .nav__toggle i{
+    font-size: 40px;
+  }
+
+  .nav__close i{
+    font-size: 40px;
   }

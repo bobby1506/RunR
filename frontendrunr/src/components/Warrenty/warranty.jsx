@@ -32,15 +32,16 @@ const Warranty = () => {
       </div>
       <div className="blackk-box right-box" data-aos="zoom-in-left">
       
-        <div className="main_content">
+        <div className="main_contents">
         <div className="KMS">
-          <h1>Comprehensive Warranty UPTO 85,000 KM
+          <h1>COMPREHENSIVE WARRANTY UPTO 85,000 KM
 </h1>
 <h2>Discover the Extensive Benefits today!</h2>
         </div>
         <div className="warranty">
-          <span>Enjoy peace of mind with the RunR HS, boasting an 85,000 km warranty. Drive confidently knowing your journey is covered.
-</span><h4></h4>
+          <span>Enjoy peace of mind with the RunR HS, boasting an 85,000 km warranty.</span>
+             <br /><span>Drive confidently knowing your journey is covered.</span>
+
         </div>
         </div>
         <div className="wrapper">

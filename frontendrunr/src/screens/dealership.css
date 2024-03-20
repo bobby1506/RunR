@@ -160,6 +160,8 @@ form .buttons button{
     margin-right: 14px;
 }
 
+
+
 @media (max-width: 750px){
     .container_dealer{
         width: 95%;
@@ -174,6 +176,9 @@ form .buttons button{
 
     .container_dealer form::-webkit-scrollbar{
         display: none;
+    }
+    .main_bgtest{
+    visibility: hidden;
     }
 }
 

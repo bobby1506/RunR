@@ -1,13 +1,10 @@
-// App.js
 import React, {useEffect} from 'react';
 import './safety.css'
 import Orange from "../../assets/orange.png"
 import AOS from 'aos'
-import fireflames from "../../assets/fire-flames.png"
 import snow from "../../assets/snowflake.png"
 const Safety = () => {
 
-  
   useEffect(()=>{
     AOS.init();
     window.addEventListener('load', AOS.refresh);
@@ -22,7 +19,7 @@ const Safety = () => {
         </div>
         <div className="liquid">
           <span></span><h4>LIQUID COOLANT</h4>
-          <h4> TECHNOLOGY!</h4>
+          <h4> TECHNOLOGY</h4>
         </div>
 
         <div className="points_orange">
@@ -35,12 +32,6 @@ const Safety = () => {
           <img src={snow} alt="" />
         </div>
         </div>
-        
-      {/* <div className="wrapperss">
-          <i class="zmdi zmdi-chevron-up zmdis"></i>
-          <i class="zmdi zmdi-chevron-up zmdis"></i>
-          <i class="zmdi zmdi-chevron-up zmdis"></i>
-          </div> */}
       </div>
       <div className="orange-box right-box">
         <div className="main_content">
@@ -53,17 +44,8 @@ const Safety = () => {
      data-aos-anchor="#example-anchor"
      data-aos-offset="1500"
      data-aos-duration="1500"/>
-   
-         
-          
         </div>
-        {/* <div className="fireflame">
-        <img src={fireflames} alt="" />
-        </div> */}
-       
         </div>
-       
-     
       </div>
     </div>
   );

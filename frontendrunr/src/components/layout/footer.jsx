@@ -1,11 +1,8 @@
 import React from 'react';
 import RunRFinal from './RunRFinal.png';
 import { Link } from 'react-router-dom';
-import {BsFacebook,BsInstagram, BsTwitter} from "react-icons/bs"
+import {BsFacebook,BsInstagram} from "react-icons/bs"
 import { FaLinkedin } from "react-icons/fa6";
-import { FaRegAddressBook } from "react-icons/fa";
-import { MdAddIcCall } from "react-icons/md";
-import { MdMarkEmailUnread } from "react-icons/md";
 import QR from "../../assets/qr.png"
 import './footer.css';
 
@@ -38,9 +35,6 @@ const Footer = () => {
             </div>
             <div className="subscribe-form">
               <form action="#">
-                {/* <input type="text" placeholder="Email Address"/> */}
-                {/* <button><i class="fab fa-telegram-plane"><BsInstagram/></i></button>
-                 */}
                  <div className="qr">
                  <img src={QR} alt="" />
                  </div>
@@ -50,7 +44,7 @@ const Footer = () => {
            
           </div>
         </div>
-        <div className="col-xl-4 col-lg-4 col-md-6 mb-30">
+        <div className="col-xl-4 col-lg-4 col-md-6 mb-30 second_part">
           <div className="footer-widget">
             <div className="footer-widget-heading">
               <h3>Useful Links</h3>
@@ -66,7 +60,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="col-xl-4 col-lg-4 col-md-6 mb-50">
+        <div className="col-xl-4 col-lg-4 col-md-6 mb-50 second_part">
           <div className="footer-widget">
             <div className="footer-widget-heading address">
               <h3>Address</h3>

@@ -60,7 +60,6 @@
 }
 
 .img_head{
-   
     z-index: 3;
     width: 100%;
     margin-top: 8rem;
@@ -71,19 +70,24 @@
     padding-top: 12rem;
     margin: 2rem;
 }
-.book_button button{
+.book_button button {
     border-radius: 20px;
     width: 150px;
     height: 40px;
-    font-weight:600;
-    
+    font-weight: 600;
     color: white;
     background-color: #E6562A;
-    
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, font-size 0.3s ease;
 }
-.book_button button:hover{
+
+.book_button button:hover {
+    background-color: #FF7F50; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     font-size: 20px;
 }
+
+
+/*media queries*/
 
 @media screen and (max-width:840px) {
     .main_page{
@@ -106,6 +110,11 @@
     width: 7px;
     height: 50%;   
 }
+.book_button{
+    position: absolute;
+    padding-top: 5.5rem;
+    margin: 0.3rem;
+}
    
 }
 
@@ -114,7 +123,70 @@
     height:24px ; 
 }
 
-@keyframes outer {
+
+
+  @media screen and (max-width:558px) {
+    .main_page{
+        height: auto;
+    }
+
+    .img_head img{
+        width: 100% !important;
+    }
+    .book_button{
+        position: absolute;
+        padding-top: 2.5rem;
+        margin: 0.3rem;
+    }
+    .book_button button{
+        border-radius: 20px;
+        width: 50px;
+        height: 20px;
+        font-size: 7px; 
+        color: white;
+        background-color: #E6562A;
+        
+    }
+    .book_button button:hover {
+        background-color: #FF7F50; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        font-size: 8px;
+    }
+ 
+  }
+
+  @media screen and (max-width:300px) {
+  
+    .chakra{
+        width: 110px;
+        height: 110px;
+        border: 6px solid currentColor;  
+    }
+    
+    .chakra .spikes .spike::before{
+        width: 7px;
+        height: 0px;  
+    }
+    
+    .chakra .spikes .spike::after{
+        width: 6px;
+    }
+
+    .book_button{
+        padding-top: 1.5rem;
+    }
+    .book_button button{
+        width: 30px;
+        height: 15px;
+        font-size: 4px; 
+    }
+    .book_button button:hover {
+        font-size: 4.5px;
+    }
+  }
+
+  /*chakra rotation*/
+  @keyframes outer {
     0%{
         transform: rotateY(180deg) scale(0);
     }
@@ -144,31 +216,4 @@
     to{
       transform: rotateY(180deg) rotate(-360deg)
     }
-  }
-
-
-  @media screen and (max-width:558px) {
-    .main_page{
-        height: auto;
-    }
-
-    .img_head img{
-        width: 100% !important;
-    }
-    .book_button{
-        position: absolute;
-        padding-top: 2.5rem;
-        margin: 0.3rem;
-    }
-    .book_button button{
-        border-radius: 20px;
-        width: 50px;
-        height: 20px;
-        font-size: 7px;
-        
-        color: white;
-        background-color: #E6562A;
-        
-    }
- 
   }

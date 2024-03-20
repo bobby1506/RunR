@@ -12,8 +12,8 @@ export default function Insta() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // const urlResponse = await axios.post('/api/v1/getinstaurl');
-        const urlResponse = await axios.post(`${BASE_URL}/api/v1/getinstaurl`);
+        const urlResponse = await axios.post('/api/v1/getinstaurl');
+        // const urlResponse = await axios.post(`${BASE_URL}/api/v1/getinstaurl`);
         const url = urlResponse.data.url;
         const dataResponse = await fetch(url);
 
@@ -72,7 +72,7 @@ export default function Insta() {
 
   return (
     <div>
-      <Heading className="taleido_heading" id="glheading" title="INSTA LIVE FEED" />
+      <Heading className="taleido_heading" id="glheading" title="STAY CONNECTED WITH US FOR THE LATEST UPDATES" />
       <div ref={mainDataRef} className="main_data">
         {feed.data.map((item) => (
           <div className="main_insta" key={item.id}>

@@ -1,11 +1,12 @@
 import React from 'react';
 import About from "../../assets/about.jpeg"
 import './aboutnew.css'; // Import your CSS file for styling
-
+import Heading from '../../Common/Headings/Heading';
 const Aboutnew = () => {
   return (
     <div className="container_about">
-      <div className="background-image">
+        {/* <Heading className="taleido_heading" id="glheading" title="ABOUT" /> */}
+      <div className="background-image visiblee">
         <img src={About} alt="" />
       </div>
       <div className="content-boxs">

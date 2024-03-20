@@ -220,7 +220,7 @@ img {
   right: 10px;
   padding: 20px;
   background: transparent;
-  color: white;
+  color: #929090;
   font-size: 45px;
   animation: moveUpDown 1.5s ease-in-out infinite;
 }

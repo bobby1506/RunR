@@ -52,11 +52,11 @@ const Header = () => {
                   TEST DRIVE
                 </Link>
               </li>
-              <li className='nav__item' onClick={closeMenu}>
+              {/* <li className='nav__item' onClick={closeMenu}>
                 <Link to='/testdrive' className='nav__link'>
                   BOOK NOW
                 </Link>
-              </li>
+              </li> */}
               <li className='nav__item' onClick={closeMenu}>
                 <Link to='/dealer' className='nav__link'>
                   BECOME A DEALER
@@ -68,7 +68,7 @@ const Header = () => {
                 </Link>
               </li>
               <li className='nav__item' onClick={closeMenu}>
-                <a href='#footer' className='nav__link'>
+                <a href='/#footer' className='nav__link'>
                   CONTACT US
                 </a>
               </li>

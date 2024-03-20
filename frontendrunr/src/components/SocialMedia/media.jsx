@@ -13,8 +13,8 @@ export default function Media() {
         // Fetch data from the server when the component mounts
         const fetchData = async () => {
             try {
-                // const response = await axios.get('api/v1/media/getAll');
-                const response = await axios.get(`${BASE_URL}/api/v1/media/getAll`);
+                const response = await axios.get('api/v1/media/getAll');
+                // const response = await axios.get(`${BASE_URL}/api/v1/media/getAll`);
                 // console.log(response.data);
                 // Assuming the actual data is in response.data.data
                 setMediaData(response.data);

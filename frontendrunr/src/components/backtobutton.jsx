@@ -30,7 +30,7 @@ const BackToTopButton = () => {
   return (
     <div>
       {isVisible && (
-        <div className="backtotop" onClick={scrollToTop}>
+        <div className="backtotop" onClick={scrollToTop} >
           <MdKeyboardDoubleArrowUp />
         </div>
       )}

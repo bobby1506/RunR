@@ -9,9 +9,10 @@ import { BASE_URL } from '../apiConfig';
 
 const DealershipForm = () => {
   const [selectedCountry, setSelectedCountry] = useState('');
+  const [selectcountryvisible, setcountryvisible]=  useState('');
   const [selectedState, setSelectedState] = useState('');
   const [selectedCity, setSelectedCity] = useState('');
-  const [loading, setLoading] = useState(false); // Added loading state
+  const [loading, setLoading] = useState(false); 
 
   const [countries, setCountries] = useState([]);
   const [states, setStates] = useState([]);
@@ -48,8 +49,8 @@ const DealershipForm = () => {
   const config = {
     cUrl: 'https://api.countrystatecity.in/v1/countries',
     ckey: 'VmRaQTAwUmEzN3o2VjJ1U0NOMThuNWVTZjhEZFY3SnQycTFOdURjbw==',
-    apiEndpoint: `${BASE_URL}/api/v1/save`, // Replace with your actual API endpoint
-    // apiEndpoint: `/api/v1/save`, //for localhost
+    // apiEndpoint: `${BASE_URL}/api/v1/save`, // Replace with your actual API endpoint
+    apiEndpoint: `/api/v1/save`, //for localhost
   };
 
   useEffect(() => {
@@ -104,7 +105,7 @@ const DealershipForm = () => {
         [field]: value,
       },
     }));
-
+    setcountryvisible(value);
     setSelectedCountry(values);
       setSelectedState('');
       setSelectedCity('');
@@ -178,7 +179,7 @@ const DealershipForm = () => {
       alert('Error submitting form data. Please try again.');
     }
     finally {
-      setLoading(false); // Set loading to false after the request is complete
+      setLoading(false);
     }
   };
 
@@ -283,7 +284,7 @@ const DealershipForm = () => {
                   type="text"
                   id="turnover"
                   name="existingBusinessDetails.turnover"
-                  placeholder="Enter your business name"
+                  placeholder="Enter the turnover of your company"
                   value={formData.existingBusinessDetails.turnover}
                   onChange={(e) => handleInputChange('existingBusinessDetails', 'turnover', e.target.value)}
                 />
@@ -300,7 +301,7 @@ const DealershipForm = () => {
                         value: country.iso2,
                         label: country.name,
                       }))}
-                      value={countries.find((country) => country.iso2 === selectedCountry)}
+                      value={countries.find((country) => country.iso2 === selectcountryvisible)}
                       onChange={(selectedOption) => handleInputcountryChange('locationAppliedFor', 'country', selectedOption.label, selectedOption.value)}
                     />
                   </div>

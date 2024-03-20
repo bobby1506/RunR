@@ -94,3 +94,22 @@
     overflow: hidden !important;
   }
 }
+
+
+@media screen and (max-width:860px) {
+  .main_data {
+    max-width: 100%; /* Adjust the max-width for smaller screens if needed */
+  }
+
+  .feed_img {
+    width: 100%; /* Set the width of the image or video to fill the container */
+    height: auto; /* Allow the height to adjust proportionally */
+  }
+  .main_insta {
+    flex: 0 0 auto;
+    width: 100%; /* Set the width of each slide */
+    margin-right: -10px;
+    height: 800px;
+    overflow: hidden !important;
+  }
+}

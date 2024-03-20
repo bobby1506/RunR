@@ -21,6 +21,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    border-radius: 20px;
     /* border: 2px solid #E6562A; */
     margin-top: 8rem;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
@@ -28,6 +29,7 @@
 .form-container{
     width: 80%; /* Adjusted width for responsiveness */
     max-width: 650px;
+ 
     /* position: relative; */
 }
 
@@ -62,6 +64,8 @@
     font-family: Helvetica;
     /* font-family: 'Akaya Telivigala', cursive; */
     background: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
     order: 1px solid #aaa;
     font-size: 20px;
     color: #000000;
@@ -71,11 +75,12 @@
 }
 .main-form div select{
     width: 104%;
- 
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
     background: none;
     order: 1px solid #aaa;
     font-size: 20px;
     color: #000000;
+    border-radius: 5px;
     outline: none;
     padding: 3px 0 3px 10px;
     margin-top: 10px;
@@ -95,19 +100,21 @@
     font-family: Helvetica;
     /* font-family: 'Akaya Telivigala', cursive; */
     width: 200px;
+
     background-color: #E6562A !important;
-    color: rgb(0, 0, 0) !important;
+    color: rgb(255, 255, 255) !important;
     transition: all .3s;
+    border-radius: 20px !important;
 }
 #submit input:hover{
     width: 200px;
-    background-color: rgb(255, 255, 255) !important;
-    color: #000000 !important;
+    background-color: #E6562A !important;
+    color: #ffffff !important;
 }
 #submit input:active{
     font-size: 19px;
     background-color: rgb(46, 20, 5) !important;
-    color: #000000 !important;
+    color: #ffffff !important;
 }
 
 

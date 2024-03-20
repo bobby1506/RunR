@@ -168,7 +168,7 @@ const [hoveredColor, setHoveredColor] = useState('');
       </div>
 <div className="main_head">
 <div className="lower_heading">
-        <h3>"Discover Top-of-the-Line Features for Your #StopNot Journey an <span>#DesignedToSpendSmart</span> Experience."</h3>
+        <h3>Discover Top-of-the-Line Features for Your #StopNot Journey</h3>
       </div>
 </div>
       
@@ -182,9 +182,12 @@ const [hoveredColor, setHoveredColor] = useState('');
           </div>
         </div>
       </div>
+      <div className="hs_visible">
+            <img src={RunRfinals} alt="" />
+          </div>
       <div className="tables">
-      <table className="containerss_table first">
-	<tbody>
+      <table className="containerss_table first image_table">
+	<tbody className='iconss'>
 		<tr>
 			<td><img src={Charge} alt="" /></td>
 
@@ -196,7 +199,8 @@ const [hoveredColor, setHoveredColor] = useState('');
 
 		</tr>
 		<tr>
-    <td><img src={Battery} alt="" /></td>
+    <td><img src={Clustre} alt="" /></td>
+    
 		
 		</tr>
     <tr>
@@ -212,7 +216,7 @@ const [hoveredColor, setHoveredColor] = useState('');
     <td><img src={AntiAlarm} alt="" /></td>
 		</tr>
     <tr>
-    <td><img src={Clustre} alt="" /></td>
+    <td><img src={Battery} alt="" /></td>
 		</tr>
 	</tbody>
 </table>
@@ -228,14 +232,15 @@ const [hoveredColor, setHoveredColor] = useState('');
 			<td>70 km/hour</td>
 
 		</tr>
-		<tr>
-  
-			<td>60 v 29 Ah*2Li-on swappable batteries with can based BMS</td>
-		</tr>
+		
     <tr>
 
 			<td>Allow Wheels</td>
 		</tr>
+    <tr>
+  
+  <td>Digital Cluster</td>
+</tr>
     <tr>
 
 			<td>1.5/2.9 kw peak power BLDC motor</td>
@@ -244,16 +249,21 @@ const [hoveredColor, setHoveredColor] = useState('');
 
 			<td>Luminous LED tail lights</td>	
 		</tr>
+  
+  
     <tr>
 
-			<td>Anti-theft alarm and device locator</td>
-		</tr>
+<td>Anti-theft alarm and device locator</td>
+</tr>
     <tr>
   
-			<td>Digital Cluster</td>
+			<td>60 v 29 Ah*2Li-on swappable batteries with can based BMS</td>
 		</tr>
 	</tbody>
 </table>
+<div className="hs_visible">
+            <img src={RunRfinal} alt="" />
+          </div>
 <table className="containers_table">
 	<tbody>
   <tr>
@@ -266,14 +276,15 @@ const [hoveredColor, setHoveredColor] = useState('');
 			<td>70 km/hour</td>
 
 		</tr>
-		<tr>
-			
-			<td>60 v 40 Ah*Li-on swappable batteries with can based BMS</td>
-		</tr>
     <tr>
 			
 			<td>Allow Wheels</td>
 		</tr>
+		<tr>
+    <td>Digital Cluster</td>
+		
+		</tr>
+ 
     <tr>
 			
 			<td>1.5/2.9 kw peak power BLDC motor</td>
@@ -287,13 +298,13 @@ const [hoveredColor, setHoveredColor] = useState('');
 			<td>Anti-theft alarm and device locator</td>
 		</tr>
     <tr>
-			
-			<td>Digital Cluster</td>
+    <td>60 v 40 Ah*Li-on swappable batteries with can based BMS</td>
+		
 		</tr>
 	</tbody>
 </table>
 <div className="grey_img">
-<img src={Grey} alt="s" data-aos="fade-left"
+<img src={WhiteL} alt="s" data-aos="fade-left"
      />
 </div>
       </div>

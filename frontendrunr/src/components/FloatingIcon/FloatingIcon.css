@@ -1,0 +1,13 @@
+.rtf {
+   bottom:10% !important;
+   right: 1px !important;
+}
+
+.rtf--ab__c>span{
+    text-align: left !important; 
+}
+
+.rtf--ab__c button{
+    background-color: #ffffff;
+    color: black;
+}

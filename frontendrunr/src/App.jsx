@@ -9,6 +9,7 @@ import Blog from "./screens/blog.jsx";
 import BackToTopButton from "./components/backtobutton.jsx";
 import SwappingSquaresSpinner from "./screens/loader.jsx";
 import About from "./components/Aboutnew/aboutnew.jsx";
+import FloatingIcon from "./components/FloatingIcon/floatingicon.jsx";
 
 const App = () => {
   const [showSplash, setShowSplash] = useState(true);
@@ -36,18 +37,18 @@ const App = () => {
             <Route path="/blog" element={<Blog />} />
             <Route path="/about" element={<About />} />
           </Routes>
-
-          {/* Conditionally render Footer or LoadingScreen */}
+          <FloatingIcon/>
           {showSplash ? (
             <SwappingSquaresSpinner />
           ) : (
             <>
             <FooterConditionally/>
-              <BackToTopButton />
+              
             </>
           )}
         </>
       )}
+      <BackToTopButton />
     </Router>
   );
 };

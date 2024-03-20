@@ -1,11 +1,9 @@
 .container_about {
     position: relative;
-    height: auto;
-    display: flex;
+    display: block;
   }
   .background-image{
   position:relative;
-  top: 0;
   left: 0;
   z-index: 1;
   width: 220vh;
@@ -43,5 +41,37 @@
       width: 80%;
       left: 10%;
     }
+    .visiblee{
+      display:none;
+    }
+    .container_about {
+      position:static;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    
+    .background-image{
+      width: auto;
+    }
+    .content-boxs {
+      background-color: rgba(16, 16, 16, 0.84); /* Adjust the transparency as needed */
+      margin-left: 0rem;
+      padding-top: 1em;
+      /* position:st; */
+      left: 0%;
+       width: 100%;
+    }
+ 
+  }
+
+  @media (max-width: 560px) {
+ 
+    .content-boxs {
+      /* position: relative; */
+      /* top: 100%; */
+      padding-top: 40em;
+    }
+ 
   }
   

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './landing.css';
-import Head from '../../assets/h.png';
 
 const Landing = () => {
   const spikeStyle = {
@@ -15,8 +14,9 @@ const Landing = () => {
      
       <div className="img_head">
       <div className="book_button">
-          <Link to="/book"></Link>
+          {/* <Link to="/book"> */}
           <button>BOOK NOW</button>
+          {/* </Link> */}
         </div>
         <img src="https://res.cloudinary.com/dlf8u5l7a/image/upload/v1707755685/runr/rmmdfo4xojsahd3bnriy.png" alt="" />
         

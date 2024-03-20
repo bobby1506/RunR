@@ -49,8 +49,8 @@ const DealershipForm = () => {
   const config = {
     cUrl: 'https://api.countrystatecity.in/v1/countries',
     ckey: 'VmRaQTAwUmEzN3o2VjJ1U0NOMThuNWVTZjhEZFY3SnQycTFOdURjbw==',
-    // apiEndpoint: `${BASE_URL}/api/v1/save`, // Replace with your actual API endpoint
-    apiEndpoint: `/api/v1/save`, //for localhost
+    apiEndpoint: `${BASE_URL}/api/v1/save`, // Replace with your actual API endpoint
+    // apiEndpoint: `/api/v1/save`, //for localhost
   };
 
   useEffect(() => {

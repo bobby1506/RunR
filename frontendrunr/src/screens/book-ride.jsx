@@ -17,8 +17,8 @@ const BookingForm = () => {
   const [loading, setLoading] = useState(false); // Added loading state
 
   const config = {
-    apiEndpoint: '/api/v1/submit', // for localhost
-    // apiEndpoint: `${BASE_URL}/api/v1/submit`, 
+    // apiEndpoint: '/api/v1/submit', // for localhost
+    apiEndpoint: `${BASE_URL}/api/v1/submit`, 
   };
 
   const handleChange = (e) => {

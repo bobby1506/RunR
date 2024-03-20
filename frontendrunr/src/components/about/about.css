@@ -252,14 +252,9 @@ h4 {
   .indigineous h3{
     font-size: 130px;
     margin-top: 25rem;
-   
-    /* margin-left: -15rem; */
-   
-   
-  }
+     }
 
   .black-container {
-    /* overflow-x:auto; */
     position: relative;
     flex-direction: column;
     padding-top:0rem !important ;

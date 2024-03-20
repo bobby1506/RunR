@@ -211,17 +211,17 @@ h4 {
 
 }
 }
-
+/* 
 @media screen and (max-width:1250px){
   .green-box {
-    width: 530px;
+    width: 100%;
     height: 450px;
     background-color: #8CBD77;
     margin-left: 4rem;
   }
   
   .content-box {
-    width: 500px;
+    width: 100%;
     height: 450px; 
   }
  
@@ -246,7 +246,7 @@ h4 {
   .content h6{
     font-size: 17px;
   }
-}
+} */
 
 @media screen and (max-width: 840px) {
   .indigineous h3{

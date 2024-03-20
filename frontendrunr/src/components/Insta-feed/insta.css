@@ -5,7 +5,7 @@
   overflow: hidden;
   transition: transform 0.5s ease-in-out;
   position: relative;
-  max-width:1300px;
+  max-width:1200px;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
@@ -69,14 +69,6 @@
   cursor: grabbing;
 }
 
-/* Add more styles for better user experience during dragging */
-/* .feed_img:active img,
-.feed_img:active video {
-  opacity: 0.7;
-  transition: opacity 0.3s ease-in-out;
-} */
-
-
 @media screen and (max-width:568px) {
   .main_data {
     max-width: 100%; /* Adjust the max-width for smaller screens if needed */
@@ -111,5 +103,23 @@
     margin-right: -10px;
     height: 800px;
     overflow: hidden !important;
+  }
+}
+
+@media screen and (max-width:860px) {
+  .main_data {
+    max-width: 80% !important; /* Adjust the max-width for smaller screens if needed */
+  }
+
+  .feed_img {
+    width: 50%; /* Set the width of the image or video to fill the container */
+    height: auto; /* Allow the height to adjust proportionally */
+  }
+  .main_insta {
+    flex: 0 0 auto;
+    width: 80%; /* Set the width of each slide */
+    margin-right: -10px;
+    height: 800px;
+    /* overflow: hidden !important; */
   }
 }

@@ -403,7 +403,11 @@ color: white;
 @media screen and (max-width:1280px){
  
  
-
+  .assured span{
+   
+    padding-right: 12rem;
+  
+  }
     .solid_safety h2 {
       font-size: 60px;
   }
@@ -427,10 +431,7 @@ color: white;
     .stopnot{
       padding-top: 23rem;
     }
-    .award img{
-      margin-left: 18rem;
-      padding-top: 0rem;
-    }
+  
 }
 
 

@@ -419,10 +419,12 @@ color: white;
   }
 
   .orange_ev span {
-    
+    padding-top: 2rem;
     font-size: 110px;
      }
- 
+ .safety span{
+     padding-top: 27rem !important;
+ }
  
     .stopnot span{
       font-size: 80px;
@@ -523,7 +525,7 @@ z-index: 5;
 
 
 
-@media screen and (max-width:380px) {
+@media screen and (max-width:450px) {
   .solid_safety h2 {
     font-size: 32px !important;
     
@@ -535,11 +537,11 @@ z-index: 5;
   font-size: 20px !important;
 }
 .orange_ev span {
- 
+ margin-top: 0rem;
   font-size: 50px !important;
- 
-  font-weight: 500; /* Adjust the font size as needed */
-  -webkit-text-stroke: 1px rgb(255, 255, 255);
+ padding-left: 4rem !important;
+  font-weight: 400 !important; /* Adjust the font size as needed */
+  -webkit-text-stroke: 0.5px rgb(255, 255, 255);
   color: transparent;
 }
 .points_orange h4{

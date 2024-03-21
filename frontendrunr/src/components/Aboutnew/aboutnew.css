@@ -18,9 +18,10 @@
   .content-boxs {
     position: absolute;
     margin-left: 3rem;
-    top: 50%;
+    top: 60%;
+    padding-top: 3rem !important;
     height: inherit;
-    left: 0%;
+    left: 2%;
      width: 45%;
     z-index: 3;
     color: black;
@@ -52,6 +53,7 @@
   @media (max-width: 768px) {
     
     .background-image{
+      display: none;
       width: auto;
     }
     .content-boxs {
@@ -69,8 +71,8 @@
  
     .content-boxs {
       /* position: relative; */
-      /* top: 100%; */
-      padding-top: 40em;
+      top: 90%;
+      /* padding-top: 40em; */
     }
  
   }

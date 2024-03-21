@@ -134,3 +134,14 @@
    margin-top: 1.5rem;
   }
 }
+
+
+@media screen and (max-width:1280px) {
+
+  .ImageCard {
+
+    margin: 1rem;
+    /* padding:0.1em; */
+  }
+
+}

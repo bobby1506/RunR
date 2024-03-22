@@ -71,55 +71,35 @@
 
 @media screen and (max-width:568px) {
   .main_data {
-    max-width: 100%; /* Adjust the max-width for smaller screens if needed */
+    max-width: 100% !important; /* Adjust the max-width for smaller screens if needed */
   }
 
   .feed_img {
-    width: 100%; /* Set the width of the image or video to fill the container */
-    height: auto; /* Allow the height to adjust proportionally */
+    width: 100% !important; /* Set the width of the image or video to fill the container */
+    height: auto !important; /* Allow the height to adjust proportionally */
   }
   .main_insta {
     flex: 0 0 auto;
-    width: 100%; /* Set the width of each slide */
+    width: 100% !important; /* Set the width of each slide */
     margin-right: -10px;
-    height: 400px;
+    height: 400px !important;
     overflow: hidden !important;
   }
 }
-
-
-@media screen and (max-width:860px) {
+@media screen and (max-width:910px) {
   .main_data {
-    max-width: 100%; /* Adjust the max-width for smaller screens if needed */
+    max-width: 100% !important; /* Adjust the max-width for smaller screens if needed */
   }
 
   .feed_img {
-    width: 100%; /* Set the width of the image or video to fill the container */
-    height: auto; /* Allow the height to adjust proportionally */
+    width: 100% !important; /* Set the width of the image or video to fill the container */
+    height: auto !important; /* Allow the height to adjust proportionally */
   }
   .main_insta {
     flex: 0 0 auto;
-    width: 100%; /* Set the width of each slide */
+    width: 100% !important; /* Set the width of each slide */
     margin-right: -10px;
-    height: 800px;
+    height: 800px ;
     overflow: hidden !important;
-  }
-}
-
-@media screen and (max-width:860px) {
-  .main_data {
-    max-width: 80% !important; /* Adjust the max-width for smaller screens if needed */
-  }
-
-  .feed_img {
-    width: 50%; /* Set the width of the image or video to fill the container */
-    height: auto; /* Allow the height to adjust proportionally */
-  }
-  .main_insta {
-    flex: 0 0 auto;
-    width: 80%; /* Set the width of each slide */
-    margin-right: -10px;
-    height: 800px;
-    /* overflow: hidden !important; */
   }
 }

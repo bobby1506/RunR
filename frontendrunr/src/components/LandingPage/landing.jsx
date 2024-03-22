@@ -14,9 +14,9 @@ const Landing = () => {
      
       <div className="img_head">
       <div className="book_button">
-          {/* <Link to="/book"> */}
-          <button>BOOK NOW</button>
-          {/* </Link> */}
+          <Link to="/testdrive">
+          <button>Test Drive</button>
+          </Link>
         </div>
         <img src="https://res.cloudinary.com/dlf8u5l7a/image/upload/v1707755685/runr/rmmdfo4xojsahd3bnriy.png" alt="" />
         

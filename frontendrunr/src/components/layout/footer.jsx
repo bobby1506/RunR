@@ -3,7 +3,7 @@ import RunRFinal from './RunRFinal.png';
 import { Link } from 'react-router-dom';
 import {BsFacebook,BsInstagram} from "react-icons/bs"
 import { FaLinkedin } from "react-icons/fa6";
-import QR from "../../assets/qr.png"
+import QR from "../../assets/runrmobility_qr.png"
 import './footer.css';
 
 const Footer = () => {
@@ -50,13 +50,13 @@ const Footer = () => {
               <h3>Useful Links</h3>
             </div>
             <ul>
-              <li><Link href="/">Home</Link></li>
-              <li><a href="/#about">About</a></li>
-              <li><Link href="/">Contact</Link></li>
-              <li><Link href="/">Book Now</Link></li>
-              <li><Link href="/testdrive">Test Drive</Link></li>
-              <li><Link href="/dealer">Become A Dealer</Link></li>
-              <li><Link href="/blog">Blog</Link></li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/">Contact</Link></li>
+              {/* <li><Link to="/">Book Now</Link></li> */}
+              <li><Link to="/testdrive">Test Drive</Link></li>
+              <li><Link to="/dealer">Become A Dealer</Link></li>
+              {/* <li><Link to="/blog">Blog</Link></li> */}
             </ul>
           </div>
         </div>
@@ -74,9 +74,9 @@ const Footer = () => {
             </div>
             <div className="footer-social-icon">
               <span>Follow us</span>
-              <a href="#" className='special'><BsFacebook/><i className="fab"></i></a>
-              <a href="#" className='special'><BsInstagram/><i className="fab"></i></a>
-              <a href="#"><FaLinkedin/><i className="fab"></i></a>
+              <Link to="https://www.facebook.com/profile.php?id=100090670182354" className='special'><BsFacebook/><i className="fab"></i></Link>
+              <Link to="https://www.instagram.com/runrmobility/" className='special'><BsInstagram/><i className="fab"></i></Link>
+              <Link to="https://www.linkedin.com/company/runr-mobility/"><FaLinkedin/><i className="fab"></i></Link>
             </div>
           </div>
         </div>

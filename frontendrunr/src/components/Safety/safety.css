@@ -99,7 +99,7 @@ z-index: 5;
       margin-left:0em;
       font-size: 100px ;
       padding-left: 15rem !important;
-      margin-top: -4rem;
+      /* margin-top: -4rem; */
       font-weight: 400 !important; /* Adjust the font size as needed */
     }
     

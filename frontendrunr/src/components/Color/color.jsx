@@ -235,7 +235,7 @@ const [hoveredColor, setHoveredColor] = useState('');
 		
     <tr>
 
-			<td>Allow Wheels</td>
+			<td>Alloy Wheels</td>
 		</tr>
     <tr>
   
@@ -278,7 +278,7 @@ const [hoveredColor, setHoveredColor] = useState('');
 		</tr>
     <tr>
 			
-			<td>Allow Wheels</td>
+			<td>Alloy Wheels</td>
 		</tr>
 		<tr>
     <td>Digital Cluster</td>
@@ -298,7 +298,7 @@ const [hoveredColor, setHoveredColor] = useState('');
 			<td>Anti-theft alarm and device locator</td>
 		</tr>
     <tr>
-    <td>60 v 40 Ah*Li-on swappable batteries with can based BMS</td>
+    <td>60 v 40 Ah*Li-on detachable batteries with can based BMS</td>
 		
 		</tr>
 	</tbody>

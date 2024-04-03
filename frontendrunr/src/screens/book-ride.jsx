@@ -110,7 +110,7 @@ const BookingForm = () => {
             </div>
             <div>
               
-              <span>City</span>
+              <span>State</span>
               <select
                 name="city"
                 id="city"
@@ -118,11 +118,10 @@ const BookingForm = () => {
                 onChange={handleChange}
                 required
               >
-                <option value="">People</option>
-                <option value="1">1 People</option>
-                <option value="2">2 People</option>
-                <option value="3">3 People</option>
-                <option value="4">4 People</option>
+                <option value="">GUJARAT</option>
+                <option value="1">UP</option>
+                <option value="2">DELHI</option>
+              
               </select>
             </div>
             <div>
@@ -134,11 +133,11 @@ const BookingForm = () => {
                 onChange={handleChange}
                 required
               >
-                <option value="">People</option>
-                <option value="1">1 People</option>
-                <option value="2">2 People</option>
-                <option value="3">3 People</option>
-                <option value="4">4 People</option>
+                <option value="">Pebble White</option>
+                <option value="1">Midninght Black</option>
+                <option value="2">Sunset Orange</option>
+                <option value="3">Carbon Grey</option>
+                <option value="4">Forest Green</option>
               </select>
             </div>
            

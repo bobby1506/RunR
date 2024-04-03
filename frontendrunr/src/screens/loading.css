@@ -1,4 +1,4 @@
-.swapping-squares-spinner, .swapping-squares-spinner * {
+/* .swapping-squares-spinner, .swapping-squares-spinner * {
     box-sizing: border-box;
   }
 
@@ -68,4 +68,18 @@
     50% {
       transform: translate(150%,-150%) scale(2,2);
     }
+  } */
+
+  .swapping-squares-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make the spinner cover the entire viewport height */
   }
+  
+  /* Adjust the width and height of the animation container as needed */
+  .lottie-animation-container {
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+  }
+  

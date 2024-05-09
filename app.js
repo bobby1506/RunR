@@ -6,7 +6,7 @@ const bodyParser= require("body-parser");
 
 
 app.use(cors({
-  origin: ['http://localhost:3000'],
+  origin: ['http://localhost:3000','https://runr-mobility.onrender.com','https://runrmobility.com','http://runrmobility.com'],
 }));
 app.use(express.json());
 app.use(cookieParser());

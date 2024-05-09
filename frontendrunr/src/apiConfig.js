@@ -1,1 +1,1 @@
-export const BASE_URL = "https://glorious-gilet-fly.cyclic.app";
+export const BASE_URL = "http://backendrunrweb.ap-south-1.elasticbeanstalk.com/";

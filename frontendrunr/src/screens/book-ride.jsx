@@ -18,7 +18,7 @@ const BookingForm = () => {
 
   const config = {
     // apiEndpoint: '/api/v1/submit', // for localhost
-    apiEndpoint: `${BASE_URL}/api/v1/submit`, 
+    apiEndpoint: `https://run-r.vercel.app/api/v1/submit`, 
   };
 
   const handleChange = (e) => {

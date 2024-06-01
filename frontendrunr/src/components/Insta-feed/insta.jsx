@@ -13,7 +13,7 @@ export default function Insta() {
     const fetchData = async () => {
       try {
         // const urlResponse = await axios.post('/api/v1/getinstaurl');
-        const urlResponse = await axios.post(`https://run-r.vercel.app/api/v1/getinstaurl`);
+        const urlResponse = await axios.post(`${BASE_URL}/api/v1/getinstaurl`);
         const url = urlResponse.data.url;
         const dataResponse = await fetch(url);
 

@@ -1,1 +1,1 @@
-export const BASE_URL = "http://backendrunrweb.ap-south-1.elasticbeanstalk.com";
+export const BASE_URL = "https://run-r.vercel.app/";

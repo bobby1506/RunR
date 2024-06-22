@@ -67,9 +67,9 @@ const Footer = () => {
             </div>
             <div className="footer-text mb-25">
               <p>Green Wheelz Ev</p>
-              <p>Shop No 1 & 2 Gajanand Complex Opp Tube</p>
-              <p>Company, OP Road Vadodara Gujarat-390020</p>
-              <p><span>+91 6393207767</span>
+              <p>MAHAVIR HOUSE, 8 C, Kamdhenu</p>
+              <p>Estate Water Tank, Near Gorwa Rd,Gorwa, Vadodara Gujarat-390003</p>
+              <p><span>+91 9313803171</span>
               </p>
             </div>
             <div className="footer-social-icon">

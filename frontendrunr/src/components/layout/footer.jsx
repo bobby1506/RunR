@@ -66,7 +66,7 @@ const Footer = () => {
               <h3>Address</h3>
             </div>
             <div className="footer-text mb-25">
-              <p>Green Wheelz Ev</p>
+              <p>RunRMobility</p>
               <p>MAHAVIR HOUSE, 8 C, Kamdhenu Estate Water Tank,</p>
               <p>Near Gorwa Rd,Gorwa, Vadodara Gujarat-390003</p>
               <p><span>+91 9313803171</span>

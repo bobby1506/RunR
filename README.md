@@ -89,7 +89,7 @@ Briefly describe your React project, its purpose, and the main features it offer
 
 2. Navigate to the project directory:
    ```sh
-   cd arestroview_web
+   cd frontendrunr
 
 3. Install dependencies:
    ```sh

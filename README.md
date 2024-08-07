@@ -4,7 +4,7 @@
 
 ## Description
 
-Briefly describe your project and what it does. Highlight the main features and functionality.
+The RunR Mobility Website is a comprehensive web application developed for RunR Mobility, a company specializing in electric vehicles (EVs). Built using the MERN stack (MongoDB, Express.js, React.js, and Node.js), the website features a modern, animated interface to engage users and promote the company's offerings. It includes essential sections such as the Home Page, About Page, and forms for booking rides and partnerships, enhancing user interaction and facilitating business growth.
 
 ## Table of Contents
 

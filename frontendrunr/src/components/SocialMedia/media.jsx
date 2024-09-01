@@ -32,27 +32,27 @@ export default function Media() {
 
     return (
         <div className="main_media">
-                    <Heading
-        className="taleido_heading"
-        id="glheading"
-        title="WE ARE IN THE NEWS!"
-      />
-        <main className="Media">
-     
-            {mediaData.map((mediaItem, index) => (
-                <ImageCard
-                    key={index}
-                    link={mediaItem.link}
-                    imgSrc={mediaItem.image}
-                    data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="2000"
-                >
-                    <h3 className="text">{mediaItem.heading}</h3>
-                    <p>{mediaItem.data}</p>
-                </ImageCard>
-            ))}
-        </main>
+            <Heading
+                className="taleido_heading"
+                id="glheading"
+                title="WE ARE IN THE NEWS!"
+            />
+            <main className="Media">
+
+                {mediaData.map((mediaItem, index) => (
+                    <ImageCard
+                        key={index}
+                        link={mediaItem.link}
+                        imgSrc={mediaItem.image}
+                        data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000"
+                    >
+                        <h3 className="text">{mediaItem.heading}</h3>
+                        <p>{mediaItem.data}</p>
+                    </ImageCard>
+                ))}
+            </main>
         </div>
     );
 }

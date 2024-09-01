@@ -45,7 +45,8 @@ const sendEmailToOwner = async (bookingData) => {
 
     const mailOptions = {
       from: process.env.EMAIL_FROM,
-      to: process.env.EMAIL_TO, 
+      to: process.env.EMAIL_TO,
+
       subject: 'New Booking',
       text: `
         New Booking Details:

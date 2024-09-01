@@ -118,9 +118,10 @@ const BookingForm = () => {
                 onChange={handleChange}
                 required
               >
-                <option value="1">GUJARAT</option>
-                <option value="2">UP</option>
-                <option value="3">DELHI</option>
+                <option value="">Select State</option>
+                <option value="GUJARAT">GUJARAT</option>
+                <option value="UP">UP</option>
+                <option value="DELHI">DELHI</option>
               
               </select>
             </div>
@@ -133,11 +134,12 @@ const BookingForm = () => {
                 onChange={handleChange}
                 required
               >
-                <option value="1">Pebble White</option>
-                <option value="2">Midninght Black</option>
-                <option value="3">Sunset Orange</option>
-                <option value="4">Carbon Grey</option>
-                <option value="5">Forest Green</option>
+                <option value="">Select Model</option>
+                <option value="PEBBLE WHITE">Pebble White</option>
+                <option value="MIDNIGHT BLACK">Midninght Black</option>
+                <option value="SUNSET ORANGE">Sunset Orange</option>
+                <option value="CARBON GREY">Carbon Grey</option>
+                <option value="FOREST GREEN">Forest Green</option>
               </select>
             </div>
            

@@ -30,7 +30,7 @@ app.use("/api/v1", insta);
 
 app.get('*',(req,res,next)=>{
     res.status(200).json({
-      message:'bad request'
+      message:'Good request'
     })
   })
 

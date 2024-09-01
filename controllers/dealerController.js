@@ -50,7 +50,7 @@ const sendEmailToOwner = async (dealership) => {
 
     const mailOptions = {
       from: process.env.EMAIL_FROM,
-      to: 'rekhaupreti7890@gmail.com', // Replace with the owner's email
+      to: process.env.EMAIL_TO, // Replace with the owner's email
       subject: 'New Booking',
       text: `
         New Dealership Details:

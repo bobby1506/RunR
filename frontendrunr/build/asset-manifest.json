@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.44248a7c.css",
-    "main.js": "/static/js/main.fa2cde01.js",
+    "main.css": "/static/css/main.34cbb2e2.css",
+    "main.js": "/static/js/main.f184097c.js",
     "static/media/ebrochure.pdf": "/static/media/ebrochure.72e8ff6eb97fe03b3336.pdf",
     "static/media/white.png": "/static/media/white.ead9071897f2328ef188.png",
     "static/media/leftgr.png": "/static/media/leftgr.38094e73e2f9c5f0d7f1.png",
@@ -35,16 +35,17 @@
     "static/media/antialarm.png": "/static/media/antialarm.50f9e3a64c9d4f9daaad.png",
     "static/media/clustre.png": "/static/media/clustre.6e97448123f705a01030.png",
     "static/media/satyamev.png": "/static/media/satyamev.86af3806736fe5f0af63.png",
+    "static/media/team-member.jpeg": "/static/media/team-member.7b417b7239890d0e9765.jpeg",
     "static/media/RunRFinal.png": "/static/media/RunRFinal.facf4f81c3b9bd1b641a.png",
     "static/media/charge.png": "/static/media/charge.8003c69a2c92c9fd7a1c.png",
     "static/media/awards.png": "/static/media/awards.e80e8ab3d9909d4fafa8.png",
     "static/media/snowflake.png": "/static/media/snowflake.547f087d63da65efa4e4.png",
     "index.html": "/index.html",
-    "main.44248a7c.css.map": "/static/css/main.44248a7c.css.map",
-    "main.fa2cde01.js.map": "/static/js/main.fa2cde01.js.map"
+    "main.34cbb2e2.css.map": "/static/css/main.34cbb2e2.css.map",
+    "main.f184097c.js.map": "/static/js/main.f184097c.js.map"
   },
   "entrypoints": [
-    "static/css/main.44248a7c.css",
-    "static/js/main.fa2cde01.js"
+    "static/css/main.34cbb2e2.css",
+    "static/js/main.f184097c.js"
   ]
 }

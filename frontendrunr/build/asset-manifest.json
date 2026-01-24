@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.18ef3952.css",
-    "main.js": "/static/js/main.1b3b70b7.js",
+    "main.css": "/static/css/main.3b40e6e5.css",
+    "main.js": "/static/js/main.d0ae6a80.js",
     "static/media/ebrochure.pdf": "/static/media/ebrochure.72e8ff6eb97fe03b3336.pdf",
     "static/media/white.png": "/static/media/white.ead9071897f2328ef188.png",
     "static/media/leftgr.png": "/static/media/leftgr.38094e73e2f9c5f0d7f1.png",
@@ -22,8 +22,9 @@
     "static/media/rightb.png": "/static/media/rightb.f3051b48834c1141f5aa.png",
     "static/media/orange.png": "/static/media/orange.9d2f4b470b02e14d39d8.png",
     "static/media/runrmobility_qr.png": "/static/media/runrmobility_qr.e5858d6a58254f781b16.png",
+    "static/media/main.png": "/static/media/main.f30ecb743bdf9bc5cd28.png",
     "static/media/1.jpeg": "/static/media/1.fa89fb3a1fc6bc57438a.jpeg",
-    "static/media/testdrive.png": "/static/media/testdrive.34b069041c97fb6da08a.png",
+    "static/media/testdrive.png": "/static/media/testdrive.0d7409f63d5d3b929c37.png",
     "static/media/led.png": "/static/media/led.fd6adeb52c248f28b8aa.png",
     "static/media/wheels.png": "/static/media/wheels.91c590bc81d85d2fd896.png",
     "static/media/about.jpeg": "/static/media/about.30c45e1dd901d1ac073e.jpeg",
@@ -40,11 +41,11 @@
     "static/media/awards.png": "/static/media/awards.e80e8ab3d9909d4fafa8.png",
     "static/media/snowflake.png": "/static/media/snowflake.547f087d63da65efa4e4.png",
     "index.html": "/index.html",
-    "main.18ef3952.css.map": "/static/css/main.18ef3952.css.map",
-    "main.1b3b70b7.js.map": "/static/js/main.1b3b70b7.js.map"
+    "main.3b40e6e5.css.map": "/static/css/main.3b40e6e5.css.map",
+    "main.d0ae6a80.js.map": "/static/js/main.d0ae6a80.js.map"
   },
   "entrypoints": [
-    "static/css/main.18ef3952.css",
-    "static/js/main.1b3b70b7.js"
+    "static/css/main.3b40e6e5.css",
+    "static/js/main.d0ae6a80.js"
   ]
 }

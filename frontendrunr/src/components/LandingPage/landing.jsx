@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './landing.css';
+import landingImage from '../../assets/main.png';
 
 const Landing = () => {
   const spikeStyle = {
@@ -13,12 +14,19 @@ const Landing = () => {
     <div className="main_page">
      
       <div className="img_head">
-      <div className="book_button">
-          <Link to="/testdrive">
-          <button>Test Drive</button>
-          </Link>
+        <div className="hero_text">
+          <h1 className="hero_title">
+            <span className="line1">INDIA'S MOST</span>
+            <span className="line2">AFFORDABLE AND SAFEST</span>
+            <span className="line3">E-SCOOTER.</span>
+          </h1>
+          <div className="book_button">
+            <Link to="/testdrive">
+              <button>BOOK NOW</button>
+            </Link>
+          </div>
         </div>
-        <img src="https://res.cloudinary.com/dlf8u5l7a/image/upload/v1707755685/runr/rmmdfo4xojsahd3bnriy.png" alt="" />
+        <img src={landingImage} alt="" />
         
         </div>
        

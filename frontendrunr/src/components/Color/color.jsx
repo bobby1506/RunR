@@ -31,6 +31,7 @@ import Heading from '../../Common/Headings/Heading';
 import BookNow from '../../assets/1.jpeg';
 import Dealer from "../../assets/2.jpg";
 import Grey from "../../assets/orange.png";
+import testDrive from '../../assets/testdrive.png';
 
 const Color = () => {
 
@@ -123,7 +124,7 @@ const Color = () => {
         </div>
         <div className="white-box left-box">
 
-          <img src="https://res.cloudinary.com/dlf8u5l7a/image/upload/v1707759757/runr/cyhtyjakcwzu8yg6h5vs.jpg" alt="" />
+          <img src={testDrive} alt="" />
           <div className="green_evvehicle">
             <img
               src={getColorLeftImage()}

@@ -19,7 +19,7 @@ const home = () => {
         <Warranty />
         <Color />
         <VideoPage />
-        <Media />
+        {/* <Media /> */}
         <TeamSection />
         <Insta />
       </div>

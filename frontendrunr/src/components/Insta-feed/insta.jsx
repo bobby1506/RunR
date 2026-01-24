@@ -57,7 +57,7 @@ export default function Insta() {
   if (!feed) {
     return (
       <div>
-        <h1>Error fetching Instagram data</h1>
+        {/* <h1>Error fetching Instagram data</h1> */}
       </div>
     );
   }

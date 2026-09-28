@@ -1,56 +1,60 @@
 // App.js
-import React, {useEffect} from 'react';
-import "../Safety/safety.css"
-import White from "../../assets/white.png"
-import AOS from "aos"
-import Award from "../../assets/awards.png"
+import React, { useEffect } from "react";
+import "../Safety/safety.css";
+import White from "../../assets/white.png";
+import AOS from "aos";
+import Award from "../../assets/awards.png";
 const Warranty = () => {
-
-  useEffect(()=>{
+  useEffect(() => {
     AOS.init();
-    window.addEventListener('load', AOS.refresh);
-  },[])
-    
+    window.addEventListener("load", AOS.refresh);
+  }, []);
+
   return (
     <div className="black-container">
-      <div className="blue-box left-box"  data-aos="zoom-in-right">
-      <div className="green_ev">
-          <img src={White} alt="" data-aos="fade-right"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine"/>
+      <div className="blue-box left-box" data-aos="zoom-in-right">
+        <div className="green_ev">
+          <img
+            src={White}
+            alt=""
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          />
         </div>
         <div className="award">
-        <img src={Award} alt="" />
+          <img src={Award} alt="" />
         </div>
         <div className="stopnot">
-        <span>WARRANTY</span>
-        
+          <span>WARRANTY</span>
         </div>
         <div className="assured">
           <span>ASSURED</span>
         </div>
       </div>
       <div className="blackk-box right-box" data-aos="zoom-in-left">
-      
         <div className="main_contents">
-        <div className="KMS">
-          <h1>COMPREHENSIVE WARRANTY UPTO 85,000 KM
-</h1>
-<h2>Discover the Extensive Benefits today!</h2>
-        </div>
-        <div className="warranty">
-          <span>Enjoy peace of mind with the RunR HS, boasting an 85,000 km warranty.</span>
-             <br /><span>Drive confidently knowing your journey is covered.</span>
-
-        </div>
+          <div className="KMS">
+            <h1>
+              COMPREHENSIVE WARRANTY UPTO 3 YEARS OR 30,000 KM WHICHEVER IS
+              EARLIER*
+            </h1>
+            <h2>Discover the Extensive Benefits today!</h2>
+          </div>
+          <div className="warranty">
+            <span>
+              Enjoy peace of mind with the RunR HS, boasting a 3 year or 30,000
+              km warranty, whichever is earlier*.
+            </span>
+            <br />
+            <span>Drive confidently knowing your journey is covered.</span>
+          </div>
         </div>
         <div className="wrapper">
           <i className="zmdi zmdi-chevron-up"></i>
           <i className="zmdi zmdi-chevron-up"></i>
           <i className="zmdi zmdi-chevron-up"></i>
-          </div>
-       
-     
+        </div>
       </div>
     </div>
   );
